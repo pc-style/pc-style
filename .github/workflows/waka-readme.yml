@@ -8,7 +8,7 @@ on:
 jobs:
   update-readme:
     name: Update README with WakaTime stats
-    runs-on: blacksmith-2vcpu-ubuntu-2204
+    runs-on: ubuntu-latest
     steps:
       - uses: anmol098/waka-readme-stats@master
         with:
