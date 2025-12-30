@@ -12,6 +12,15 @@ const stack = {
 
 ---
 
+#### now coding
+
+```
+> status: coming soon
+  awaiting signal...
+```
+
+---
+
 #### projects
 
 | | |
@@ -26,5 +35,17 @@ const stack = {
 <p align="center">
   <a href="https://pcstyle.dev">pcstyle.dev</a>
 </p>
+
+<details>
+<summary><code>0x7f</code></summary>
+<br/>
+
+```
+eW91IGZvdW5kIGl0LiB3ZWxjb21lIHRvIHRoZSB2b2lkLg==
+```
+
+<sub>if you know, you know</sub>
+
+</details>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=ff00ff&height=60&section=footer" width="100%"/>
