@@ -14,10 +14,11 @@ const stack = {
 
 #### now coding
 
+<!--START_SECTION:waka-->
 ```
-> status: coming soon
-  awaiting signal...
+> status: awaiting first sync...
 ```
+<!--END_SECTION:waka-->
 
 ---
 
@@ -41,10 +42,10 @@ const stack = {
 <br/>
 
 ```
-eW91IGZvdW5kIGl0LiB3ZWxjb21lIHRvIHRoZSB2b2lkLg==
+lbh sbhaq vg. jrypbzr gb gur ibvq.
 ```
 
-<sub>if you know, you know</sub>
+<sub>rot13</sub>
 
 </details>
 
