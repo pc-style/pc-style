@@ -16,7 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> status: awaiting first sync...
+> today: 2 mins
+  JavaScript: 2 mins
 ```
 <!--END_SECTION:waka-->
 
