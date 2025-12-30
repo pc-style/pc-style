@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> wakatime.log
-  main_app |  | 2 mins today
+> idle
+  2 mins today
 ```
 <!--END_SECTION:waka-->
 
