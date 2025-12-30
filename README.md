@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rateLimiter.js
-  main_app | JavaScript | 2 mins today
+> wakatime.log
+  main_app |  | 2 mins today
 ```
 <!--END_SECTION:waka-->
 
