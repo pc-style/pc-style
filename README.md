@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  39 mins today
+> main.js
+  ytconapp | JavaScript | 39 mins today
 ```
 <!--END_SECTION:waka-->
 
