@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Current
-Issues
+> .env.local
   pcstyledev |  | 14 mins today
 ```
 <!--END_SECTION:waka-->
