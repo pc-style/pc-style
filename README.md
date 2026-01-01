@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.local
-  pcstyledev |  | 14 mins today
+> index.ts
+  pcstyledev | TypeScript | 14 mins today
 ```
 <!--END_SECTION:waka-->
 
