@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-JSON
-Parsing
-Error
+> vercel
   pcstyledev |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
