@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyledev
-  pcstyledev |  | 0 secs today
+> [[...route]].ts
+  pcstyledev | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
