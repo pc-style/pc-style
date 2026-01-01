@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> vercel
-  pcstyledev |  | 0 secs today
+> [[...route]].ts
+  pcstyledev | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
