@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> useLiveStatus.ts
-  pcstyledev | TypeScript | 0 secs today
+> pcstyledev
+  pcstyledev |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
