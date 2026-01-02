@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> cleanup.ts
-  friends-tierlist | TypeScript | 51 mins today
+> friends
+  friends-tierlist |  | 51 mins today
 ```
 <!--END_SECTION:waka-->
 
