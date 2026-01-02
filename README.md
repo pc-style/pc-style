@@ -16,8 +16,11 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> SnapshotModal.tsx
-  friends-tierlist | TypeScript | 36 mins today
+> ✳
+Schema
+Validation
+Error
+  friends-tierlist |  | 41 mins today
 ```
 <!--END_SECTION:waka-->
 
