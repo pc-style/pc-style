@@ -16,8 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  41 mins today
+> bunx
+convex
+dev
+  friends-tierlist |  | 41 mins today
 ```
 <!--END_SECTION:waka-->
 
