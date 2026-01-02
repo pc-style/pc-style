@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> changelog.ts
+> FriendCard.tsx
   friends-tierlist | TypeScript | 10 mins today
 ```
 <!--END_SECTION:waka-->
