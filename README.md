@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bun
-  friends-tierlist |  | 20 mins today
+> friends
+  friends-tierlist |  | 36 mins today
 ```
 <!--END_SECTION:waka-->
 
