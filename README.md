@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Username
-Password
-Signup
+> bun
   friends-tierlist |  | 20 mins today
 ```
 <!--END_SECTION:waka-->
