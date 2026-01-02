@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> pcstyledev
   friends-tierlist |  | 1 hr today
 ```
 <!--END_SECTION:waka-->
