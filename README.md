@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Habit
-Tracking
-App
+> friends
   friends-tierlist |  | 20 mins today
 ```
 <!--END_SECTION:waka-->
