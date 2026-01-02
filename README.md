@@ -16,8 +16,11 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> AuthButton.tsx
-  friends-tierlist | TypeScript | 20 mins today
+> ✳
+Username
+Password
+Signup
+  friends-tierlist |  | 20 mins today
 ```
 <!--END_SECTION:waka-->
 
