@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyledev
-  friends-tierlist |  | 1 hr today
+> layout.tsx
+  friends-tierlist | TypeScript | 1 hr today
 ```
 <!--END_SECTION:waka-->
 
