@@ -20,7 +20,7 @@ const stack = {
 Habit
 Tracking
 App
-  pcstyledev |  | 0 secs today
+  pcstyledev |  | 10 mins today
 ```
 <!--END_SECTION:waka-->
 
