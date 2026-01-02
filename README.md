@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> icon-192.svg
-  friends-tierlist | Image (svg) | 10 mins today
+> idle
+  10 mins today
 ```
 <!--END_SECTION:waka-->
 
