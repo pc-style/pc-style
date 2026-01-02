@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Schema
-Validation
-Error
+> claude
   friends-tierlist |  | 41 mins today
 ```
 <!--END_SECTION:waka-->
