@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> friends
+> ✳
+Turbopack
+Configuration
+Error
   friends-tierlist |  | 20 mins today
 ```
 <!--END_SECTION:waka-->
