@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Habit
-Tracking
-App
-  pcstyledev |  | 10 mins today
+> changelog.ts
+  friends-tierlist | TypeScript | 10 mins today
 ```
 <!--END_SECTION:waka-->
 
