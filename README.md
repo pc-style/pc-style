@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> friends
-  friends-tierlist |  | 36 mins today
+> SnapshotModal.tsx
+  friends-tierlist | TypeScript | 36 mins today
 ```
 <!--END_SECTION:waka-->
 
