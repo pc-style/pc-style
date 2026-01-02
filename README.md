@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> npx
+> ✳
+Habit
+Tracking
+App
   pcstyledev |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
