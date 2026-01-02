@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> friends
+> git
   friends-tierlist |  | 51 mins today
 ```
 <!--END_SECTION:waka-->
