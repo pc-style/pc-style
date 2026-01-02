@@ -16,8 +16,11 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  20 mins today
+> ✳
+Habit
+Tracking
+App
+  friends-tierlist |  | 20 mins today
 ```
 <!--END_SECTION:waka-->
 
