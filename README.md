@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> FriendCard.tsx
-  friends-tierlist | TypeScript | 10 mins today
+> icon-192.svg
+  friends-tierlist | Image (svg) | 10 mins today
 ```
 <!--END_SECTION:waka-->
 
