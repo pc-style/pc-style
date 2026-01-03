@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pen-brush.ts
+> easel-brush.ts
   rocreate | TypeScript | 28 mins today
 ```
 <!--END_SECTION:waka-->
