@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> everywhere
+> ✳
+Bun
+Install
+Error
   everywhere-grab |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
