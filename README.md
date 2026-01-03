@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > DrawingCanvas.tsx
-  app | TypeScript | 0 secs today
+  App | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
