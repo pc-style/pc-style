@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> index.html
-  App | HTML | 0 secs today
+> canvasStore.ts
+  app | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
