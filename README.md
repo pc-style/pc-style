@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> types.ts
-  everywhere-grab | TypeScript | 0 secs today
+> everywhere
+  everywhere-grab |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
