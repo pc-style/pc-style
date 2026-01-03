@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rocreate
+> OpenCode
   rocreate |  | 2 hrs 58 mins today
 ```
 <!--END_SECTION:waka-->
