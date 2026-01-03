@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> claude
+> ✳
+Procreate
+UI
+Rebuild
   rocreate |  | 2 hrs 23 mins today
 ```
 <!--END_SECTION:waka-->
