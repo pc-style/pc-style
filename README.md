@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > main.tsx
-  app | TypeScript | 0 secs today
+  App | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
