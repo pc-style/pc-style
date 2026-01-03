@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rocreate
+> claude
   rocreate |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
