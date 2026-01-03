@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > index.html
-  app | HTML | 0 secs today
+  App | HTML | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
