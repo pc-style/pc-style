@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-  procreate |  | 0 secs today
+> index.html
+  app | HTML | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
