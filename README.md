@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Bun
-Install
-Error
-  everywhere-grab |  | 0 secs today
+> idle
+  0 secs today
 ```
 <!--END_SECTION:waka-->
 
