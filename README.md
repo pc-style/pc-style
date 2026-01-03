@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Environment
-Configuration
-  rocreate |  | 0 secs today
+> idle
+  0 secs today
 ```
 <!--END_SECTION:waka-->
 
