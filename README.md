@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Universal
-Project
-Support
-  rocreate |  | 0 secs today
+> kl-app.ts
+  rocreate | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
