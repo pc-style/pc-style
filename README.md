@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> everywhere
-  everywhere-grab |  | 0 secs today
+> package.json
+  rocreate | JSON | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
