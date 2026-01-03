@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Background
-Process
-Management
+> claude
   rocreate |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
