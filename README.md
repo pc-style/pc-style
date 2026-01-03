@@ -16,8 +16,11 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  28 mins today
+> ✳
+Procreate
+Alternative
+Design
+  rocreate |  | 28 mins today
 ```
 <!--END_SECTION:waka-->
 
