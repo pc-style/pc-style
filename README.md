@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> procreate.scss
-  rocreate | SCSS | 0 secs today
+> idle
+  0 secs today
 ```
 <!--END_SECTION:waka-->
 
