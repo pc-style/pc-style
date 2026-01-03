@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rocreate
+> commands
   rocreate |  | 13 mins today
 ```
 <!--END_SECTION:waka-->
