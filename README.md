@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> package.json
-  rocreate | JSON | 0 secs today
+> kl-color-history.ts
+  rocreate | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
