@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Procreate
-UI
-Rebuild
-  rocreate |  | 2 hrs 38 mins today
+> procreate-layout.ts
+  rocreate | TypeScript | 2 hrs 38 mins today
 ```
 <!--END_SECTION:waka-->
 
