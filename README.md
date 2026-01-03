@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .gitignore
-  rocreate | Git Config | 3 hrs 49 mins today
+> idle
+  3 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
 
