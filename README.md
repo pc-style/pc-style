@@ -20,7 +20,7 @@ const stack = {
 Dev
 Server
 Error
-  rocreate |  |  today
+  rocreate |  | 2 hrs 54 mins today
 ```
 <!--END_SECTION:waka-->
 
