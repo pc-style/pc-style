@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> kl-canvas.ts
-  rocreate | TypeScript | 46 mins today
+> rocreate
+  rocreate |  | 46 mins today
 ```
 <!--END_SECTION:waka-->
 
