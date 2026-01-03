@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> canvasUtils.ts
-  v2 | TypeScript | 0 secs today
+> procreate-funkcje.html
+  procreate | HTML | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
