@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Dev
-Server
-Error
-  rocreate |  | 2 hrs 54 mins today
+> procreate.scss
+  rocreate | SCSS | 2 hrs 54 mins today
 ```
 <!--END_SECTION:waka-->
 
