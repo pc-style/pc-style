@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  0 secs today
+> kl-config.ts
+  rocreate | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
