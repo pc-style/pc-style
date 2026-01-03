@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> main.tsx
-  App | TypeScript | 0 secs today
+> funkcje-app.txt
+  procreate | Text | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
