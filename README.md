@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .dockerignore
-  rocreate | Docker | 0 secs today
+> kl-app.ts
+  rocreate | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
