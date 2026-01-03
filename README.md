@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> kl-color-slider.ts
-  rocreate | TypeScript | 0 secs today
+> claude
+  rocreate |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
