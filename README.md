@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Procreate
-Alternative
-Design
-  rocreate |  | 28 mins today
+> event.types.ts
+  rocreate | TypeScript | 28 mins today
 ```
 <!--END_SECTION:waka-->
 
