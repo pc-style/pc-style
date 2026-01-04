@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rocreate
+> ✳
+Procreate
+Web
+Architecture
   drawing-app |  | 3 hrs 36 mins today
 ```
 <!--END_SECTION:waka-->
