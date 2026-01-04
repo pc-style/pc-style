@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> brush-panel.tsx
-  drawing-app | TypeScript | 4 hrs 4 mins today
+> package.json
+  drawing-app | JSON | 4 hrs 4 mins today
 ```
 <!--END_SECTION:waka-->
 
