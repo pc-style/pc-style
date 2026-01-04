@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> images
-  copycat |  | 12 mins today
+> idle
+  12 mins today
 ```
 <!--END_SECTION:waka-->
 
