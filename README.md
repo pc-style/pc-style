@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Procreate
-Web
-Architecture
-  drawing-app |  | 3 hrs 47 mins today
+> idle
+  3 hrs 47 mins today
 ```
 <!--END_SECTION:waka-->
 
