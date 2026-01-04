@@ -17,8 +17,9 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > ✳
-Project
-Rework
+Select
+Tool
+Bug
   rocreate |  | 2 hrs 27 mins today
 ```
 <!--END_SECTION:waka-->
