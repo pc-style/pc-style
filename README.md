@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  1 hr 28 mins today
+> OpenCode
+  rocreate |  | 1 hr 28 mins today
 ```
 <!--END_SECTION:waka-->
 
