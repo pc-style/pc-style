@@ -16,11 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Procreate
-Web
-Architecture
-  drawing-app |  | 3 hrs 36 mins today
+> PLAN.MD
+  drawing-app | Markdown | 3 hrs 36 mins today
 ```
 <!--END_SECTION:waka-->
 
