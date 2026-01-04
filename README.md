@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> funkcje-app.txt
-  rocreate | Text | 2 hrs 57 mins today
+> idle
+  3 hrs 1 min today
 ```
 <!--END_SECTION:waka-->
 
