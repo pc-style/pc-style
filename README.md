@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-   today
+> images
+  copycat |  |  today
 ```
 <!--END_SECTION:waka-->
 
