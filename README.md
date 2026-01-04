@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-CodeRabbit
-Review
-  rocreate |  | 2 hrs 9 mins today
+> idle
+  2 hrs 9 mins today
 ```
 <!--END_SECTION:waka-->
 
