@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> globals.css
-  drawing-app | CSS | 4 hrs 40 mins today
+> idle
+   today
 ```
 <!--END_SECTION:waka-->
 
