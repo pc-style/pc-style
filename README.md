@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Procreate
-Web
-Architecture
+> codex
   drawing-app |  | 3 hrs 47 mins today
 ```
 <!--END_SECTION:waka-->
