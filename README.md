@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-CodeRabbit
-Review
-  rocreate |  | 2 hrs 11 mins today
+> procreate.scss
+  rocreate | SCSS | 2 hrs 11 mins today
 ```
 <!--END_SECTION:waka-->
 
