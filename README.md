@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> side-bar.ts
+> quick-menu.ts
   rocreate | TypeScript | 2 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
