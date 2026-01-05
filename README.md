@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Fix
-Issues
-  pc |  | 12 mins today
+> index.ts
+  pc | TypeScript | 12 mins today
 ```
 <!--END_SECTION:waka-->
 
