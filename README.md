@@ -17,8 +17,8 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > ✳
-Fix
-Issues
+Documentation
+Context
   pc |  | 24 mins today
 ```
 <!--END_SECTION:waka-->
