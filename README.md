@@ -17,14 +17,6 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > pcstyle
-—
-tail
--n
-200
--f
-subagent.log
-—
-80×24
   copycat |  | 44 mins today
 ```
 <!--END_SECTION:waka-->
