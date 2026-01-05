@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> plan.md
+> data-model.md
   procreate-clone | Markdown | 2 hrs 35 mins today
 ```
 <!--END_SECTION:waka-->
