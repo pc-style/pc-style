@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  pc |  | 1 hr 18 mins today
+> features.md
+  copycat | Markdown | 1 hr 18 mins today
 ```
 <!--END_SECTION:waka-->
 
