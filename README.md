@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> name.subagent
-  copycat |  | 44 mins today
+> todo.md
+  copycat | Markdown | 44 mins today
 ```
 <!--END_SECTION:waka-->
 
