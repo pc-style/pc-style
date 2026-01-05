@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> debug-renderer.ts
-  procreate-clone | TypeScript | 3 hrs 39 mins today
+> easel-project-updater.ts
+  rocreate | TypeScript | 3 hrs 39 mins today
 ```
 <!--END_SECTION:waka-->
 
