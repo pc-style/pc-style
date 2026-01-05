@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> procreate
-  copycat |  | 1 hr 33 mins today
+> pre-commit
+  pc |  | 1 hr 33 mins today
 ```
 <!--END_SECTION:waka-->
 
