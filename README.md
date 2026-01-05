@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> renderer.ts
-  pc | TypeScript | 4 hrs 24 mins today
+> compositor.ts
+  pc | TypeScript | 4 hrs 29 mins today
 ```
 <!--END_SECTION:waka-->
 
