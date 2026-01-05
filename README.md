@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> alchemy.subagent
-  copycat |  | 44 mins today
+> idle
+  44 mins today
 ```
 <!--END_SECTION:waka-->
 
