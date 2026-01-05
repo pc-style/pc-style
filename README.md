@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> sensory.ts
+> chronos.ts
   procreate-clone | TypeScript | 2 hrs 35 mins today
 ```
 <!--END_SECTION:waka-->
