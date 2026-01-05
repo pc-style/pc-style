@@ -16,8 +16,16 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  44 mins today
+> pcstyle
+—
+tail
+-n
+200
+-f
+subagent.log
+—
+80×24
+  copycat |  | 44 mins today
 ```
 <!--END_SECTION:waka-->
 
