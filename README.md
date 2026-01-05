@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > main.ts
-  pc | TypeScript |  today
+  pc | TypeScript | 12 mins today
 ```
 <!--END_SECTION:waka-->
 
