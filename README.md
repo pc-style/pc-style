@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> debug-renderer.ts
+> canvas-overlay.tsx
   procreate-clone | TypeScript | 3 hrs 4 mins today
 ```
 <!--END_SECTION:waka-->
