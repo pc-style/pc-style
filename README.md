@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> filter-chromatic-aberration.ts
-  rocreate | TypeScript | 4 hrs 23 mins today
+> idle
+  4 hrs 23 mins today
 ```
 <!--END_SECTION:waka-->
 
