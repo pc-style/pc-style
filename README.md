@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> spec.md
-  procreate-clone | Markdown | 2 hrs 35 mins today
+> idle
+  2 hrs 35 mins today
 ```
 <!--END_SECTION:waka-->
 
