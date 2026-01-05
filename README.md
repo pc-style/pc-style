@@ -16,8 +16,12 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  21 mins today
+> Procreate
+Architecture
+and
+Feature
+Analysis.md
+  copycat | Markdown | 21 mins today
 ```
 <!--END_SECTION:waka-->
 
