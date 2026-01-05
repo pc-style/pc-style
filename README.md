@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> chronos.ts
-  procreate-clone | TypeScript | 2 hrs 49 mins today
+> tasks.md
+  procreate-clone | Markdown | 2 hrs 53 mins today
 ```
 <!--END_SECTION:waka-->
 
