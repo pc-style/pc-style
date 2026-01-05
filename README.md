@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> curl
+> procreate
   copycat |  | 1 hr 33 mins today
 ```
 <!--END_SECTION:waka-->
