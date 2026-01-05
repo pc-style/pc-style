@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Untitled-1
-  drawing-app |  | 44 mins today
+> CLAUDE.md
+  pc | Markdown | 44 mins today
 ```
 <!--END_SECTION:waka-->
 
