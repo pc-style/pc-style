@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  4 hrs 2 mins today
+> reference-window.ts
+  rocreate | TypeScript | 4 hrs 2 mins today
 ```
 <!--END_SECTION:waka-->
 
