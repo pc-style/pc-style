@@ -17,8 +17,9 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > ✳
-Documentation
-Context
+Project
+Gallery
+UI
   pc |  | 24 mins today
 ```
 <!--END_SECTION:waka-->
