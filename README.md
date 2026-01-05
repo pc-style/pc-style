@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> main.ts
-  procreate-clone | TypeScript | 3 hrs 4 mins today
+> idle
+  3 hrs 4 mins today
 ```
 <!--END_SECTION:waka-->
 
