@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pc
+> Gemini
   pc |  | 1 hr 18 mins today
 ```
 <!--END_SECTION:waka-->
