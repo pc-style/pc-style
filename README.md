@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pc
+> 👻
   drawing-app |  | 44 mins today
 ```
 <!--END_SECTION:waka-->
