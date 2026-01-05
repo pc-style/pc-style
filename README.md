@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pre-commit
-  pc |  | 1 hr 33 mins today
+> package.json
+  pc | JSON | 1 hr 33 mins today
 ```
 <!--END_SECTION:waka-->
 
