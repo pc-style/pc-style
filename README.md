@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> easel-project-updater.ts
-  rocreate | TypeScript | 3 hrs 51 mins today
+> idle
+  3 hrs 51 mins today
 ```
 <!--END_SECTION:waka-->
 
