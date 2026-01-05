@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> features.md
-  copycat | Markdown | 1 hr 33 mins today
+> curl
+  copycat |  | 1 hr 33 mins today
 ```
 <!--END_SECTION:waka-->
 
