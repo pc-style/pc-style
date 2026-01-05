@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> claude
-  copycat |  | 21 mins today
+> name.subagent
+  copycat |  | 44 mins today
 ```
 <!--END_SECTION:waka-->
 
