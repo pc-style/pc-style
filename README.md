@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  1 hr 35 mins today
+> brush-engine.ts
+  pc | TypeScript | 1 hr 35 mins today
 ```
 <!--END_SECTION:waka-->
 
