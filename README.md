@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> app.tsx
+> gallery-app.ts
   pc | TypeScript | 24 mins today
 ```
 <!--END_SECTION:waka-->
