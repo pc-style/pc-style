@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> brush-blend.frag
-  pc | GLSL | 1 hr 5 mins today
+> brush-engine.ts
+  pc | TypeScript | 1 hr 5 mins today
 ```
 <!--END_SECTION:waka-->
 
