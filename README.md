@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Git
-actions
+> rocreate
   messenger-desktop |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
