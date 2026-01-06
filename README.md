@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> codex
-  pc |  | 1 hr 48 mins today
+> COMMIT_EDITMSG
+  pc | Git | 1 hr 48 mins today
 ```
 <!--END_SECTION:waka-->
 
