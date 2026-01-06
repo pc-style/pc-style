@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> claude
+> codex
   pc |  | 2 hrs 44 mins today
 ```
 <!--END_SECTION:waka-->
