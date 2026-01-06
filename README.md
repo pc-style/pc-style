@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rocreate
-  messenger-desktop |  | 0 secs today
+> CLAUDE.md
+  rocreate | Markdown | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
