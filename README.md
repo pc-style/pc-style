@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> messenger
-  messenger-desktop |  | 4 hrs 7 mins today
+> idle
+  4 hrs 7 mins today
 ```
 <!--END_SECTION:waka-->
 
