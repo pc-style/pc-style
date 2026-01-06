@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  1 hr 5 mins today
+> brush-blend.frag
+  pc | GLSL | 1 hr 5 mins today
 ```
 <!--END_SECTION:waka-->
 
