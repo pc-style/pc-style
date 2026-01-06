@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> claude
-  pc |  | 2 hrs 44 mins today
+> skia-renderer.ts
+  pc | TypeScript | 2 hrs 44 mins today
 ```
 <!--END_SECTION:waka-->
 
