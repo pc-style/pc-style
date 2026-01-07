@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Terminal.tsx
-  multiplayer-terminal | TypeScript | 26 mins today
+> .env.local
+  multiplayer-terminal |  | 26 mins today
 ```
 <!--END_SECTION:waka-->
 
