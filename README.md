@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bun
-convex
-dev
-  pcstyledev |  | 7 hrs 32 mins today
+> idle
+  7 hrs 32 mins today
 ```
 <!--END_SECTION:waka-->
 
