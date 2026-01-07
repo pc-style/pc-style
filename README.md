@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> floating-panel.ts
-  rocreate | TypeScript | 1 hr 37 mins today
+> idle
+  1 hr 37 mins today
 ```
 <!--END_SECTION:waka-->
 
