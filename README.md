@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > pcstyle
-  rocreate |  |  today
+  rocreate |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
