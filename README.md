@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> npx
-  og |  | 7 hrs 59 mins today
+> funkcje-app.txt
+  rocreate | Text | 7 hrs 59 mins today
 ```
 <!--END_SECTION:waka-->
 
