@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  pcstyledev |  | 7 hrs 32 mins today
+> pcstyle
+  pcstyledev |  | 7 hrs 57 mins today
 ```
 <!--END_SECTION:waka-->
 
