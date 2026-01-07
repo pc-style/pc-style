@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> prompt.md
-  rocreate | Markdown | 2 hrs 53 mins today
+> codex
+  rocreate |  | 2 hrs 53 mins today
 ```
 <!--END_SECTION:waka-->
 
