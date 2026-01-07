@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Multiplayer
-Terminal
-App
+> codex
   multiplayer-terminal |  | 26 mins today
 ```
 <!--END_SECTION:waka-->
