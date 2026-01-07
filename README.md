@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> AGENTS.MD
-  pcstyledev | Markdown | 5 hrs 1 min today
+> idle
+  5 hrs 1 min today
 ```
 <!--END_SECTION:waka-->
 
