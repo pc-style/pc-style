@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> liquify-ui.ts
-  rocreate | TypeScript | 51 mins today
+> idle
+  51 mins today
 ```
 <!--END_SECTION:waka-->
 
