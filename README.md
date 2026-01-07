@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Rocreate
-Development
-  rocreate |  | 2 hrs 53 mins today
+> kl-indexed-db.types.ts
+  rocreate | TypeScript | 2 hrs 53 mins today
 ```
 <!--END_SECTION:waka-->
 
