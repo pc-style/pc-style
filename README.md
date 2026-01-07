@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
+> codex
   rocreate |  | 4 hrs 52 mins today
 ```
 <!--END_SECTION:waka-->
