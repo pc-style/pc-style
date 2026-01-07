@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rocreate
+> ✳
+Parallel
+Agent
+Testing
   rocreate |  | 1 hr 10 mins today
 ```
 <!--END_SECTION:waka-->
