@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  4 hrs 52 mins today
+> Gemini
+  rocreate |  | 4 hrs 52 mins today
 ```
 <!--END_SECTION:waka-->
 
