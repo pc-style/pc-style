@@ -16,11 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> nvm
-install
-20nnvm
-use
-20nnode
+> npm
   pcstyledev |  | 6 hrs 44 mins today
 ```
 <!--END_SECTION:waka-->
