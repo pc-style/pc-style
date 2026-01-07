@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> stack-canonical.json
-  pcstyledev | JSON | 6 hrs 21 mins today
+> idle
+  6 hrs 21 mins today
 ```
 <!--END_SECTION:waka-->
 
