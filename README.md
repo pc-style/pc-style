@@ -16,8 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  1 hr 37 mins today
+> ✳
+Window
+resizing
+  rocreate |  | 1 hr 37 mins today
 ```
 <!--END_SECTION:waka-->
 
