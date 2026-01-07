@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> codex
-  multiplayer-terminal |  | 26 mins today
+> liquify-ui.ts
+  rocreate | TypeScript | 26 mins today
 ```
 <!--END_SECTION:waka-->
 
