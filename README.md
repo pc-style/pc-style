@@ -16,8 +16,12 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  6 hrs 44 mins today
+> nvm
+install
+20nnvm
+use
+20nnode
+  pcstyledev |  | 6 hrs 44 mins today
 ```
 <!--END_SECTION:waka-->
 
