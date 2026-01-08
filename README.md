@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
+> .env.local
   stock-management |  | 14 mins today
 ```
 <!--END_SECTION:waka-->
