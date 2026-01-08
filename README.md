@@ -16,13 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> aplikacja
-do
-aktualizacji
-jaki
-towar
-jest
-  rocreate |  | 1 hr 10 mins today
+> globals.css
+  stock-management | CSS | 1 hr 10 mins today
 ```
 <!--END_SECTION:waka-->
 
