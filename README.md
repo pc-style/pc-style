@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> page.tsx
-  stock-management | TypeScript | 1 hr 41 mins today
+> idle
+  1 hr 41 mins today
 ```
 <!--END_SECTION:waka-->
 
