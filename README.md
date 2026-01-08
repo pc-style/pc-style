@@ -16,8 +16,11 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  0 secs today
+> ✳
+Vape
+Shop
+SAP
+  stock-management |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
