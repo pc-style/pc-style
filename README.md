@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.local
-  stock-management |  | 2 hrs 9 mins today
+> CLAUDE.md
+  stock-management | Markdown | 2 hrs 9 mins today
 ```
 <!--END_SECTION:waka-->
 
