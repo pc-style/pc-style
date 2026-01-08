@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> queries.ts
+> page.tsx
   stock-management | TypeScript | 0 secs today
 ```
 <!--END_SECTION:waka-->
