@@ -16,8 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  57 mins today
+> aplikacja
+do
+aktualizacji
+jaki
+towar
+jest
+  rocreate |  | 57 mins today
 ```
 <!--END_SECTION:waka-->
 
