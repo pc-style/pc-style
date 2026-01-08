@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> stock
+> vercel
+env
+add
+CONVEX_DEPLOY_KEY
   stock-management |  | 2 hrs 37 mins today
 ```
 <!--END_SECTION:waka-->
