@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> edit-ui.ts
+> gallery.ts
   rocreate | TypeScript | 57 mins today
 ```
 <!--END_SECTION:waka-->
