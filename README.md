@@ -17,9 +17,8 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > ✳
-Vape
-Shop
-SAP
+Task
+Planning
   stock-management |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
