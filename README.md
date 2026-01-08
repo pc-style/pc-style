@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> globals.css
-  stock-management | CSS | 1 hr 13 mins today
+> examples.md
+  stock-management | Markdown | 1 hr 13 mins today
 ```
 <!--END_SECTION:waka-->
 
