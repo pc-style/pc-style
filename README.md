@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> gallery.ts
-  rocreate | TypeScript | 57 mins today
+> idle
+  57 mins today
 ```
 <!--END_SECTION:waka-->
 
