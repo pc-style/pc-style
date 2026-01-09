@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> implementation_plan.md.resolved
   odrodzenie_oddechowe |  | 1 hr 30 mins today
 ```
 <!--END_SECTION:waka-->
