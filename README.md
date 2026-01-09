@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  odrodzenie_oddechowe |  | 3 hrs 3 mins today
+> idle
+  3 hrs 3 mins today
 ```
 <!--END_SECTION:waka-->
 
