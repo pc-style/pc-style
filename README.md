@@ -16,14 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> aplikacja
-do
-aktualizacji
-jaki
-towar
-jest
-CO
-  stock-management |  | 35 mins today
+> idle
+  35 mins today
 ```
 <!--END_SECTION:waka-->
 
