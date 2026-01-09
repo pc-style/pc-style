@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
+> bash
   odrodzenie_oddechowe |  | 3 hrs 20 mins today
 ```
 <!--END_SECTION:waka-->
