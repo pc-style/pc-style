@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> page.tsx
-  odrodzenie_oddechowe | TypeScript | 1 hr 53 mins today
+> idle
+   today
 ```
 <!--END_SECTION:waka-->
 
