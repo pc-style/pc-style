@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> implementation_plan.md.resolved
-  odrodzenie_oddechowe |  | 1 hr 30 mins today
+> data.ts
+  odrodzenie_oddechowe | TypeScript | 1 hr 53 mins today
 ```
 <!--END_SECTION:waka-->
 
