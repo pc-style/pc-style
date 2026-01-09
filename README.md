@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
-  dreamcats |  | 52 mins today
+> index.ts
+  messenger-desktop | TypeScript | 52 mins today
 ```
 <!--END_SECTION:waka-->
 
