@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pdf2md
-  odrodzenie_oddechowe |  | 3 hrs 35 mins today
+> idle
+  3 hrs 35 mins today
 ```
 <!--END_SECTION:waka-->
 
