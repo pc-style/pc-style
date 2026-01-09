@@ -16,21 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> aplikacja
-do
-aktualizacji
-jaki
-towar
-jest
-CO
-WYKONAC
-W
-JAKIM
-CZASIE
-ZA
-JAKA
-KWOTE
-  dreamcats |  | 42 mins today
+> idle
+  42 mins today
 ```
 <!--END_SECTION:waka-->
 
