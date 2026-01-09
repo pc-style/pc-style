@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Header.tsx
-  odrodzenie_oddechowe | TypeScript | 2 hrs 33 mins today
+> Gemini
+  odrodzenie_oddechowe |  | 2 hrs 33 mins today
 ```
 <!--END_SECTION:waka-->
 
