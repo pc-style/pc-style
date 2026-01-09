@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bot-difficulty.test.ts
-  dreamcats | TypeScript | 48 mins today
+> idle
+  48 mins today
 ```
 <!--END_SECTION:waka-->
 
