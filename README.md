@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  48 mins today
+> 👻
+  dreamcats |  | 48 mins today
 ```
 <!--END_SECTION:waka-->
 
