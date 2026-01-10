@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> mutations.ts
-  stock-management | TypeScript | 31 mins today
+> idle
+  31 mins today
 ```
 <!--END_SECTION:waka-->
 
