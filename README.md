@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  15 mins today
+> 2.md
+  plan-automator | Markdown | 15 mins today
 ```
 <!--END_SECTION:waka-->
 
