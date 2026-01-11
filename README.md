@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  1 hr 14 mins today
+> greedy-solver.ts
+  plan-automator | TypeScript | 1 hr 14 mins today
 ```
 <!--END_SECTION:waka-->
 
