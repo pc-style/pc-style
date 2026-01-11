@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> globals.css
-  plan-automator | CSS | 32 mins today
+> claude
+  plan-automator |  | 32 mins today
 ```
 <!--END_SECTION:waka-->
 
