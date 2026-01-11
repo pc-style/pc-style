@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> projects
+> claude
   plan-automator |  | 1 hr 30 mins today
 ```
 <!--END_SECTION:waka-->
