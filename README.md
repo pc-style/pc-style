@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ml_pipeline.py
-  lab11 | Python | 0 secs today
+> idle
+  0 secs today
 ```
 <!--END_SECTION:waka-->
 
