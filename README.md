@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> COMMIT_EDITMSG
-  plan-automator | Git | 40 mins today
+> ga.worker.ts
+  plan-automator | TypeScript | 40 mins today
 ```
 <!--END_SECTION:waka-->
 
