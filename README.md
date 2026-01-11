@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> lab12.md
-  lab12 | Markdown | 0 secs today
+> lab_statystyki_nazwisko.py
+  lab12 | Python | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
