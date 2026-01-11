@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  40 mins today
+> COMMIT_EDITMSG
+  plan-automator | Git | 40 mins today
 ```
 <!--END_SECTION:waka-->
 
