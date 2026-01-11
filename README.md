@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> subjects.csv
-  plan-automator | CSV | 32 mins today
+> plan
+  plan-automator |  | 32 mins today
 ```
 <!--END_SECTION:waka-->
 
