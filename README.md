@@ -17,10 +17,6 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > clawdbot
-pairing
-approve
-telegram
-4FG7DV7N
   lab11 |  | 2 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
