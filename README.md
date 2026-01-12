@@ -17,6 +17,8 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > clawdbot
+providers
+add
   lab11 |  | 2 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
