@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> package.json
-  stock-management | JSON | 3 hrs 45 mins today
+> idle
+  3 hrs 45 mins today
 ```
 <!--END_SECTION:waka-->
 
