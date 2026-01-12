@@ -16,9 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> clawdbot
-providers
-add
+> sudo
+clawdbot
+daemon
+install
   lab11 |  | 2 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
