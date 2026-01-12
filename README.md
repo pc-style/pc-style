@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> 👻
+> commands
   stock-management |  | 44 mins today
 ```
 <!--END_SECTION:waka-->
