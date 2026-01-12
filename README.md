@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> claude
+> Gemini
   stock-management |  | 17 mins today
 ```
 <!--END_SECTION:waka-->
