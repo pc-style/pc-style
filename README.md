@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pre-commit
-  stock-management |  | 44 mins today
+> idle
+  44 mins today
 ```
 <!--END_SECTION:waka-->
 
