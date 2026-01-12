@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> zadanie1.cpp
-  lab11 | C++ | 2 hrs 1 min today
+> clawdbot
+  lab11 |  | 2 hrs 1 min today
 ```
 <!--END_SECTION:waka-->
 
