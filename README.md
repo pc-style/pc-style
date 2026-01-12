@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bun
-run
-ios
-  stock-management |  | 17 mins today
+> idle
+  17 mins today
 ```
 <!--END_SECTION:waka-->
 
