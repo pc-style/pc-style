@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .gitignore
-  stock-management | Git Config | 44 mins today
+> clawdbot
+  stock-management |  | 44 mins today
 ```
 <!--END_SECTION:waka-->
 
