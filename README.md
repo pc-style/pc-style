@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> prompt
-engineering
-report.md
-  project | Markdown | 3 hrs 17 mins today
+> idle
+  3 hrs 17 mins today
 ```
 <!--END_SECTION:waka-->
 
