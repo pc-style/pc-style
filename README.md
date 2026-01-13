@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  6 mins today
+> Gemini
+  site |  | 6 mins today
 ```
 <!--END_SECTION:waka-->
 
