@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> laboratorium_13_AiSD.md
-  lab13 | Markdown | 0 secs today
+> report.txt
+  lab13 | Text | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
