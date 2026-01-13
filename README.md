@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> report.txt
-  lab13 | Text | 0 secs today
+> idle
+  0 secs today
 ```
 <!--END_SECTION:waka-->
 
