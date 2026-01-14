@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> convex.config.ts
-  math-platform | TypeScript | 5 hrs 13 mins today
+> github.com
+  math-platform |  | 5 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
 
