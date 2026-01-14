@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> index.ts
-  fast-find | TypeScript | 27 mins today
+> pcstyle
+  fast-find |  | 27 mins today
 ```
 <!--END_SECTION:waka-->
 
