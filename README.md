@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> clawdbot.json
-  clawdbot | JSON | 2 hrs 22 mins today
+> .gitignore
+  terminarz | Git Config | 2 hrs 22 mins today
 ```
 <!--END_SECTION:waka-->
 
