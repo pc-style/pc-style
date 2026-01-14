@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.example
+> .env.local
   math-platform |  | 4 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
