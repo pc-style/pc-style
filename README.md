@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ServicesSection.tsx
+> db.ts
   site | TypeScript | 5 hrs 33 mins today
 ```
 <!--END_SECTION:waka-->
