@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> index.ts
+> ProjectCard.tsx
   pcstyledev | TypeScript | 4 hrs 23 mins today
 ```
 <!--END_SECTION:waka-->
