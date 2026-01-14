@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
-  pcstyledev |  | 4 hrs 49 mins today
+> plan.md
+  math-platform | Markdown | 4 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
 
