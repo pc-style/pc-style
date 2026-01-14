@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.local
-  math-platform |  | 5 hrs 13 mins today
+> AGENTS.MD
+  math-platform | Markdown | 5 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
 
