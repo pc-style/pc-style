@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> clawdbot
-  pcstyledev |  | 3 hrs 58 mins today
+> projects.json
+  pcstyledev | JSON | 3 hrs 58 mins today
 ```
 <!--END_SECTION:waka-->
 
