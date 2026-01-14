@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
+> pcstyle
   og |  | 19 mins today
 ```
 <!--END_SECTION:waka-->
