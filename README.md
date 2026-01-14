@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyledev
-  terminarz |  | 3 hrs 32 mins today
+> links.txt
+  pcstyledev | Text | 3 hrs 32 mins today
 ```
 <!--END_SECTION:waka-->
 
