@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> exams.ts
-  math-platform | TypeScript | 5 hrs 59 mins today
+> idle
+  5 hrs 59 mins today
 ```
 <!--END_SECTION:waka-->
 
