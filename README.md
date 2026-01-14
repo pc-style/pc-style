@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> codex
+> Gemini
   math-platform |  |  today
 ```
 <!--END_SECTION:waka-->
