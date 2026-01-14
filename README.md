@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> data.ts
-  terminarz | TypeScript | 1 hr 30 mins today
+> clawdbot
+  terminarz |  | 1 hr 30 mins today
 ```
 <!--END_SECTION:waka-->
 
