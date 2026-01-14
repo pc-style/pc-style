@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bun
+> codex
   math-platform |  |  today
 ```
 <!--END_SECTION:waka-->
