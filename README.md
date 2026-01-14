@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> clawdbot
   pcstyledev |  | 3 hrs 32 mins today
 ```
 <!--END_SECTION:waka-->
