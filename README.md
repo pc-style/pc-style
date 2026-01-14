@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> test-generation.js
-  math-platform | JavaScript | 6 hrs 55 mins today
+> Gemini
+  math-platform |  | 6 hrs 55 mins today
 ```
 <!--END_SECTION:waka-->
 
