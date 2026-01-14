@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> 👻
-  og |  | 27 mins today
+> index.ts
+  fast-find | TypeScript | 27 mins today
 ```
 <!--END_SECTION:waka-->
 
