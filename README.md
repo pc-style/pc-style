@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-   today
+> math
+  math-platform |  |  today
 ```
 <!--END_SECTION:waka-->
 
