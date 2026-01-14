@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ADD_NEW.md
-  terminarz | Markdown | 3 hrs 7 mins today
+> manifest.json
+  terminarz | JSON | 3 hrs 7 mins today
 ```
 <!--END_SECTION:waka-->
 
