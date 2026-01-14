@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> email_draft.txt
-  oddech | Text | 6 hrs 30 mins today
+> idle
+  6 hrs 30 mins today
 ```
 <!--END_SECTION:waka-->
 
