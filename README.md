@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> analiza
+> obsidian
   math-platform |  | 42 mins today
 ```
 <!--END_SECTION:waka-->
