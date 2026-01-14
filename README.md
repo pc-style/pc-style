@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> clawdbot.json
-  clawdbot | JSON | 50 mins today
+> idle
+  1 hr 14 mins today
 ```
 <!--END_SECTION:waka-->
 
