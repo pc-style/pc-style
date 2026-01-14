@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> fast
+> 👻
   og |  | 27 mins today
 ```
 <!--END_SECTION:waka-->
