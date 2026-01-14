@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> 👻
-  clawd |  | 3 hrs 7 mins today
+> open-clawd-tui.sh
+  clawd | Bash | 3 hrs 7 mins today
 ```
 <!--END_SECTION:waka-->
 
