@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> email_draft.txt
-  oddech | Text | 5 hrs 33 mins today
+> ServicesSection.tsx
+  site | TypeScript | 5 hrs 33 mins today
 ```
 <!--END_SECTION:waka-->
 
