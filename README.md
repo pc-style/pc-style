@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  math-platform |  | 6 hrs 55 mins today
+> all-docs.md
+  math-platform | Markdown | 7 hrs 21 mins today
 ```
 <!--END_SECTION:waka-->
 
