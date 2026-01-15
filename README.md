@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> solver.ts
-  math-platform | TypeScript | 7 hrs 34 mins today
+> Gemini
+  math-platform |  | 7 hrs 34 mins today
 ```
 <!--END_SECTION:waka-->
 
