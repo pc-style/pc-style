@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  math-platform |  | 42 mins today
+> Untitled-1
+  obsidian-gemini-latex-gen |  | 42 mins today
 ```
 <!--END_SECTION:waka-->
 
