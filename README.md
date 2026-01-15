@@ -16,11 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> uv
-run
-adk
-run
-exercise_solver_agent
+> Gemini
   HYTALE |  | 7 hrs 16 mins today
 ```
 <!--END_SECTION:waka-->
