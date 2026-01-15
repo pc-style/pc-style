@@ -16,9 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Checking
-Server
-Status
+> Diagnosing
+Import
+Issues
   oddech |  | 10 hrs 58 mins today
 ```
 <!--END_SECTION:waka-->
