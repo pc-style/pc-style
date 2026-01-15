@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> janitor_chat_export_1768445620286.txt
-  math-platform | Text | 4 hrs 43 mins today
+> latex
+  math-platform |  | 4 hrs 43 mins today
 ```
 <!--END_SECTION:waka-->
 
