@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
+> github.com
   pcstyledev |  | 10 hrs 31 mins today
 ```
 <!--END_SECTION:waka-->
