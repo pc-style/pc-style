@@ -16,12 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> for
-i
-in
-{1..30};
-don
-codex
+> rocreate
   math-platform |  | 11 hrs 21 mins today
 ```
 <!--END_SECTION:waka-->
