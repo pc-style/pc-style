@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> GEMINI.MD
-  algebraaa | Markdown | 13 hrs 51 mins today
+> vercel
+  algebraaa |  | 13 hrs 51 mins today
 ```
 <!--END_SECTION:waka-->
 
