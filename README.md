@@ -16,13 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Orchestrate
-Codex
-sessions
-for
-autono...
+> Gemini
   math-platform |  | 11 hrs 48 mins today
 ```
 <!--END_SECTION:waka-->
