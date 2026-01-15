@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Outlining
-Extension
-Architecture
+> Gemini
   oddech |  | 10 hrs 31 mins today
 ```
 <!--END_SECTION:waka-->
