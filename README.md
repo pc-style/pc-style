@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  math-platform |  | 3 hrs 24 mins today
+> package.json
+  math-platform | JSON | 3 hrs 24 mins today
 ```
 <!--END_SECTION:waka-->
 
