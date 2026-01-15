@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> zad4_reszta_automat.py
-  python_wprowadzenie | Python | 13 hrs 18 mins today
+> idle
+  13 hrs 18 mins today
 ```
 <!--END_SECTION:waka-->
 
