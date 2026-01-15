@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  oddech |  | 10 hrs 58 mins today
+> .env.local
+  math-platform |  | 10 hrs 58 mins today
 ```
 <!--END_SECTION:waka-->
 
