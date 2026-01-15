@@ -16,8 +16,12 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> suggestion.ts
-  obsidian-gemini-latex-gen | TypeScript | 1 hr 9 mins today
+> pcstyle
+—
+-zsh
+—
+80×24
+  obsidian-gemini-latex-gen |  | 1 hr 9 mins today
 ```
 <!--END_SECTION:waka-->
 
