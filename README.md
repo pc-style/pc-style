@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  12 hrs 43 mins today
+> tmux
+  math-platform |  | 12 hrs 43 mins today
 ```
 <!--END_SECTION:waka-->
 
