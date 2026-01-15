@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> admin.ts
-  math-platform | TypeScript | 3 hrs 51 mins today
+> github.com
+  math-platform |  | 3 hrs 51 mins today
 ```
 <!--END_SECTION:waka-->
 
