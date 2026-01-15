@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> python_wprowadzenie
-  python_wprowadzenie |  | 13 hrs 51 mins today
+> idle
+  13 hrs 51 mins today
 ```
 <!--END_SECTION:waka-->
 
