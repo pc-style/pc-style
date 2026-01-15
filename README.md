@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .gitignore
-  math-platform | Git Config | 2 hrs 4 mins today
+> 👻
+  math-platform |  | 2 hrs 4 mins today
 ```
 <!--END_SECTION:waka-->
 
