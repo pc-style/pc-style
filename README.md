@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Updating
-Call
-Signatures
-  oddech |  | 10 hrs 58 mins today
+> idle
+  10 hrs 58 mins today
 ```
 <!--END_SECTION:waka-->
 
