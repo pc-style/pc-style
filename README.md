@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  python_wprowadzenie |  | 13 hrs 18 mins today
+> zad3_suma_rekurencyjna.py
+  python_wprowadzenie | Python | 13 hrs 18 mins today
 ```
 <!--END_SECTION:waka-->
 
