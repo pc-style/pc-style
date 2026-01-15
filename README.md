@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> vi
+> Gemini
   HYTALE |  | 7 hrs 16 mins today
 ```
 <!--END_SECTION:waka-->
