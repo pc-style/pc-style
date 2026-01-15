@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> 👻
+> latex
   math-platform |  | 2 hrs 4 mins today
 ```
 <!--END_SECTION:waka-->
