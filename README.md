@@ -16,8 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  4 hrs 43 mins today
+> brew
+install
+localstack
+  math-platform |  | 4 hrs 43 mins today
 ```
 <!--END_SECTION:waka-->
 
