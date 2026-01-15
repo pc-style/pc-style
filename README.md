@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
+> tmux
   math-platform |  | 12 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
