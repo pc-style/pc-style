@@ -16,7 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
+> Resuming
+The
+Process
   math-platform |  | 11 hrs 48 mins today
 ```
 <!--END_SECTION:waka-->
