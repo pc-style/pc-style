@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  math-platform |  | 9 hrs 10 mins today
+> idle
+  9 hrs 10 mins today
 ```
 <!--END_SECTION:waka-->
 
