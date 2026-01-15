@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Diagnosing
-Import
-Issues
+> Gemini
   oddech |  | 10 hrs 58 mins today
 ```
 <!--END_SECTION:waka-->
