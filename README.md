@@ -16,8 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> statusline.sh
-  HYTALE | Bash | 6 hrs 25 mins today
+> ✳
+Task
+notifications
+  HYTALE |  | 6 hrs 25 mins today
 ```
 <!--END_SECTION:waka-->
 
