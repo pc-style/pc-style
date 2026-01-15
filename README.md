@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyledev
+> gemini
   math-platform |  | 8 hrs 52 mins today
 ```
 <!--END_SECTION:waka-->
