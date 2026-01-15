@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> SKILL.md
-  SAAS | Markdown | 5 hrs 56 mins today
+> statusline.sh
+  HYTALE | Bash | 6 hrs 25 mins today
 ```
 <!--END_SECTION:waka-->
 
