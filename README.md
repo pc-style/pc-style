@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
+> latex
   math-platform |  | 1 hr 39 mins today
 ```
 <!--END_SECTION:waka-->
