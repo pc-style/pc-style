@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> obsidian
-  math-platform |  | 42 mins today
+> idle
+  42 mins today
 ```
 <!--END_SECTION:waka-->
 
