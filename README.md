@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rocreate
+> bun
   math-platform |  | 12 hrs 43 mins today
 ```
 <!--END_SECTION:waka-->
