@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Anticipating
-File
-Listing
-  math-platform |  | 11 hrs 48 mins today
+> infinite_lol.sh
+  math-platform | Bash | 11 hrs 48 mins today
 ```
 <!--END_SECTION:waka-->
 
