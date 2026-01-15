@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Developing
-Concurrent
-Execution
-Plan
+> math
   math-platform |  | 11 hrs 48 mins today
 ```
 <!--END_SECTION:waka-->
