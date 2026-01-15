@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Resuming
-The
-Process
-  math-platform |  | 11 hrs 48 mins today
+> package.json
+  math-platform | JSON | 11 hrs 48 mins today
 ```
 <!--END_SECTION:waka-->
 
