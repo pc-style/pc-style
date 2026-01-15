@@ -16,8 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> math
-  algebraaa |  | 13 hrs 59 mins today
+> Lista3_Liczby
+zesplone
+cz.2.md
+  algebraaa | Markdown | 13 hrs 59 mins today
 ```
 <!--END_SECTION:waka-->
 
