@@ -16,9 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> brew
-install
-localstack
+> localstack
+auth
+set
   math-platform |  | 4 hrs 43 mins today
 ```
 <!--END_SECTION:waka-->
