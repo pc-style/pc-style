@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> tmux
-  math-platform |  | 12 hrs 38 mins today
+> review.md
+  math-platform | Markdown | 12 hrs 38 mins today
 ```
 <!--END_SECTION:waka-->
 
