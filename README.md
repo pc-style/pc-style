@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  math-platform |  | 12 hrs 13 mins today
+> fix.sh
+  math-platform | Bash | 12 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
 
