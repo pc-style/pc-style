@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OpenCode
+> roz
   HYTALE |  | 6 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
