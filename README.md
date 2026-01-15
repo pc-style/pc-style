@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  1 hr 9 mins today
+> suggestion.ts
+  obsidian-gemini-latex-gen | TypeScript | 1 hr 9 mins today
 ```
 <!--END_SECTION:waka-->
 
