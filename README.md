@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> 👻
+> pcstyle
   pcstyledev |  |  today
 ```
 <!--END_SECTION:waka-->
