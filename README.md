@@ -16,12 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> uv
-run
-streamlit
-run
-app.py
-  HYTALE | Python | 7 hrs 16 mins today
+> Gemini
+  HYTALE |  | 7 hrs 16 mins today
 ```
 <!--END_SECTION:waka-->
 
