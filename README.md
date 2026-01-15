@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Untitled-1
+> latex
   obsidian-gemini-latex-gen |  | 42 mins today
 ```
 <!--END_SECTION:waka-->
