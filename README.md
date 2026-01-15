@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> vercel
+> math
   algebraaa |  | 13 hrs 51 mins today
 ```
 <!--END_SECTION:waka-->
