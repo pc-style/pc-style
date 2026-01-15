@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  26 mins today
+> pcstyle
+  codex |  | 26 mins today
 ```
 <!--END_SECTION:waka-->
 
