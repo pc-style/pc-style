@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Analyzing
-Current
-Performance
-  math-platform |  | 12 hrs 13 mins today
+> infinite_lol.sh
+  math-platform | Bash | 12 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
 
