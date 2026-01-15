@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Lista3_Liczby
-zesplone
-cz.2.md
-  algebraaa | Markdown | 14 hrs 1 min today
+> idle
+  14 hrs 1 min today
 ```
 <!--END_SECTION:waka-->
 
