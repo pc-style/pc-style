@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> roz
-  HYTALE |  | 6 hrs 49 mins today
+> settings.json
+  HYTALE | JSON | 6 hrs 49 mins today
 ```
 <!--END_SECTION:waka-->
 
