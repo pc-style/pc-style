@@ -16,8 +16,12 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Untitled-1
-  math-platform |  | 4 hrs 6 mins today
+> Girlfriend
+_
+Intense
+&
+Possessive.json
+  math-platform | JSON | 4 hrs 6 mins today
 ```
 <!--END_SECTION:waka-->
 
