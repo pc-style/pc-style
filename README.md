@@ -16,8 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  11 hrs 21 mins today
+> for
+i
+in
+{1..30};
+don
+codex
+  math-platform |  | 11 hrs 21 mins today
 ```
 <!--END_SECTION:waka-->
 
