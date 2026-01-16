@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> bun
   auth |  | 1 hr 26 mins today
 ```
 <!--END_SECTION:waka-->
