@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> middleware.ts
-  auth | TypeScript | 1 hr 9 mins today
+> .env.local
+  auth |  | 1 hr 9 mins today
 ```
 <!--END_SECTION:waka-->
 
