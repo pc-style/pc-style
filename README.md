@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .gitignore
-  site | Git Config | 9 hrs 45 mins today
+> .env.check
+  site |  | 9 hrs 45 mins today
 ```
 <!--END_SECTION:waka-->
 
