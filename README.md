@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  2 hrs 12 mins today
+> COMMIT_EDITMSG
+  math-platform | Git | 2 hrs 12 mins today
 ```
 <!--END_SECTION:waka-->
 
