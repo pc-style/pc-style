@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > COMMIT_EDITMSG
-  math-platform | Git | 2 hrs 12 mins today
+  uploader | Git | 2 hrs 12 mins today
 ```
 <!--END_SECTION:waka-->
 
