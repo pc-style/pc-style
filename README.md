@@ -16,10 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Revising
-Scope
-Definition
-  oddech |  | 10 hrs 8 mins today
+> idle
+   today
 ```
 <!--END_SECTION:waka-->
 
