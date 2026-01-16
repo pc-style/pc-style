@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> testsprite-mcp-test-report.md
-  auth | Markdown | 2 hrs 13 mins today
+> idle
+  2 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
 
