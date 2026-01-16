@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  subdomain-auth |  | 6 hrs 47 mins today
+> idle
+  6 hrs 47 mins today
 ```
 <!--END_SECTION:waka-->
 
