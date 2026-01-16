@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  10 hrs 8 mins today
+> .geminignore
+  oddech |  | 10 hrs 8 mins today
 ```
 <!--END_SECTION:waka-->
 
