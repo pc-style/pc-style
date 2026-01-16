@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> BRAND.md
-  pcstyledev | Markdown | 40 mins today
+> github.com
+  pcstyledev |  | 40 mins today
 ```
 <!--END_SECTION:waka-->
 
