@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> content.ts
-  site | TypeScript | 8 hrs 28 mins today
+> data.json
+  oddech | JSON | 8 hrs 28 mins today
 ```
 <!--END_SECTION:waka-->
 
