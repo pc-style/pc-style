@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> aa.md
-  oddech | Markdown | 8 hrs 2 mins today
+> idle
+  8 hrs 2 mins today
 ```
 <!--END_SECTION:waka-->
 
