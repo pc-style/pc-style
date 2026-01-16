@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> workos
   pcstyledev |  | 6 hrs 23 mins today
 ```
 <!--END_SECTION:waka-->
