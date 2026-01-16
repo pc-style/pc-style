@@ -16,9 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Locating
-HTML
-Content
+> Revising
+Scope
+Definition
   oddech |  | 10 hrs 8 mins today
 ```
 <!--END_SECTION:waka-->
