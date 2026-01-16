@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
+> .env.local
   auth |  | 1 hr 26 mins today
 ```
 <!--END_SECTION:waka-->
