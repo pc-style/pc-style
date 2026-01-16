@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> appwrite.json
-  pcstyledev | JSON | 3 hrs 50 mins today
+> idle
+  3 hrs 50 mins today
 ```
 <!--END_SECTION:waka-->
 
