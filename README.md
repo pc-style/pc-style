@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> implementation_plan.md
-  oddech | Markdown | 8 hrs 28 mins today
+> data.json
+  oddech | JSON | 8 hrs 28 mins today
 ```
 <!--END_SECTION:waka-->
 
