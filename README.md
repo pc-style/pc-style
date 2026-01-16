@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> page.tsx
-  site | TypeScript | 0 secs today
+> codex
+  site |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
