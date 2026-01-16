@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  codex |  | 40 mins today
+> mcp_config.json
+  pcstyledev | JSON | 40 mins today
 ```
 <!--END_SECTION:waka-->
 
