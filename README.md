@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .gitignore
-  pcstyledev | Git Config | 7 hrs 52 mins today
+> idle
+  7 hrs 52 mins today
 ```
 <!--END_SECTION:waka-->
 
