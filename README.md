@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Gemini
-  oddech |  | 0 secs today
+> index.md
+  oddech | Markdown | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
