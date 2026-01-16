@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  pcstyledev |  | 5 hrs 28 mins today
+> idle
+  5 hrs 28 mins today
 ```
 <!--END_SECTION:waka-->
 
