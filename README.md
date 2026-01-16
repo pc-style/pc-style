@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> data.json
-  oddech | JSON | 9 hrs 20 mins today
+> idle
+  9 hrs 20 mins today
 ```
 <!--END_SECTION:waka-->
 
