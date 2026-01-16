@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  pcstyledev |  | 6 hrs 47 mins today
+> .eslintrc.json
+  subdomain-auth | JSON | 6 hrs 47 mins today
 ```
 <!--END_SECTION:waka-->
 
