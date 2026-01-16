@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.dev
+> .env.prod
   auth |  | 2 hrs 41 mins today
 ```
 <!--END_SECTION:waka-->
