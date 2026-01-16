@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> workos
-  pcstyledev |  | 6 hrs 23 mins today
+> .gitignore
+  pcstyledev | Git Config | 6 hrs 23 mins today
 ```
 <!--END_SECTION:waka-->
 
