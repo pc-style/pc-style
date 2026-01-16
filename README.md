@@ -16,7 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> git
+> GIT_TRACE_PERFORMANCE=1
+git
+commit
   oddech |  | 9 hrs 20 mins today
 ```
 <!--END_SECTION:waka-->
