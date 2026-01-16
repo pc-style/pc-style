@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> package.json
-  site | JSON | 8 hrs 53 mins today
+> data.json
+  oddech | JSON | 8 hrs 53 mins today
 ```
 <!--END_SECTION:waka-->
 
