@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> central-point-477516-v8-c84bb8f4ba96.json
-  math-platform | JSON | 5 hrs 28 mins today
+> github.com
+  math-platform |  | 5 hrs 28 mins today
 ```
 <!--END_SECTION:waka-->
 
