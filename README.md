@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> COMMIT_EDITMSG
-  uploader | Git | 2 hrs 12 mins today
+> idle
+  2 hrs 12 mins today
 ```
 <!--END_SECTION:waka-->
 
