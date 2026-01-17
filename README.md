@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .zshrc
-  pcstyledev | Bash | 5 hrs 17 mins today
+> idle
+  5 hrs 17 mins today
 ```
 <!--END_SECTION:waka-->
 
