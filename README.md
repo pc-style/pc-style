@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> codex
-  pcstyledev |  | 3 hrs 38 mins today
+> motion.js
+  pcstyledev | JavaScript | 3 hrs 38 mins today
 ```
 <!--END_SECTION:waka-->
 
