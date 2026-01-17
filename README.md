@@ -16,12 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> find
-Work
-(
-
-
-  pcstyledev |  | 3 hrs 38 mins today
+> idle
+  3 hrs 38 mins today
 ```
 <!--END_SECTION:waka-->
 
