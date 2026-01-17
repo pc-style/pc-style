@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> MANUAL_TEST_PLAN.md
-  pcstyledev | Markdown | 3 hrs 23 mins today
+> .gitignore
+  pcstyledev | Git Config | 3 hrs 23 mins today
 ```
 <!--END_SECTION:waka-->
 
