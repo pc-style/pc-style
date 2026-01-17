@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > cubic.yaml
-  og | YAML | 5 hrs 47 mins today
+  auth | YAML | 5 hrs 47 mins today
 ```
 <!--END_SECTION:waka-->
 
