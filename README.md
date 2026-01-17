@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> cubic.yaml
-  auth | YAML | 5 hrs 47 mins today
+> page.tsx
+  pcstyledev | TypeScript | 5 hrs 47 mins today
 ```
 <!--END_SECTION:waka-->
 
