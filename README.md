@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  5 hrs 17 mins today
+> sample.yml
+  pcstyledev | YAML | 5 hrs 17 mins today
 ```
 <!--END_SECTION:waka-->
 
