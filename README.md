@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .gitignore
-  pcstyledev | Git Config | 6 hrs 6 mins today
+> package.json
+  pcstyledev | JSON | 6 hrs 6 mins today
 ```
 <!--END_SECTION:waka-->
 
