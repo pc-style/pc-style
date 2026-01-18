@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> vercel.com
+> .gitmodules
   pcstyledev |  | 1 hr 34 mins today
 ```
 <!--END_SECTION:waka-->
