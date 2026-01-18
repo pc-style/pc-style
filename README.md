@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> mcp_config.json
-  odrodzenieoddechowe | JSON | 4 hrs 15 mins today
+> idle
+  4 hrs 15 mins today
 ```
 <!--END_SECTION:waka-->
 
