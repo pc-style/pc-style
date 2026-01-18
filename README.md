@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Meet-Spotkanie-Odrodzenie-Oddechowe-Terapeuta-Oddechu-1673c9a1-26c1.md
-  odrodzenieoddechowe | Markdown | 3 hrs 29 mins today
+> idle
+  3 hrs 29 mins today
 ```
 <!--END_SECTION:waka-->
 
