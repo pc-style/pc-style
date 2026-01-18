@@ -16,11 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> skierowanie
-na
-lep
-do
-m
+> 👻
   pcstyledev |  | 1 hr 2 mins today
 ```
 <!--END_SECTION:waka-->
