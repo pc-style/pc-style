@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  1 hr 2 mins today
+> mcp_config.json
+  pcstyledev | JSON | 1 hr 2 mins today
 ```
 <!--END_SECTION:waka-->
 
