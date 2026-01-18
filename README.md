@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  3 hrs 44 mins today
+> Untitled-2
+  odrodzenieoddechowe |  | 3 hrs 44 mins today
 ```
 <!--END_SECTION:waka-->
 
