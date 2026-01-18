@@ -16,8 +16,12 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> README.md
-  pcstyledev | Markdown | 35 mins today
+> skierowanie
+na
+lep
+do
+m
+  pcstyledev |  | 35 mins today
 ```
 <!--END_SECTION:waka-->
 
