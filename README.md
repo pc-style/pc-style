@@ -16,8 +16,12 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  2 hrs 48 mins today
+> skierowanie
+na
+lep
+do
+m
+  pcstyledev |  | 2 hrs 48 mins today
 ```
 <!--END_SECTION:waka-->
 
