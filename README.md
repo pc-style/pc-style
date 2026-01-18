@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> middleware.ts
-  pcstyledev | TypeScript | 1 hr 55 mins today
+> idle
+  1 hr 55 mins today
 ```
 <!--END_SECTION:waka-->
 
