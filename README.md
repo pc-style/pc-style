@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> vercel.com
   pcstyledev |  | 1 hr 34 mins today
 ```
 <!--END_SECTION:waka-->
