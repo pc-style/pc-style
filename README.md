@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.local
-  oddech |  | 7 hrs 25 mins today
+> idle
+  7 hrs 25 mins today
 ```
 <!--END_SECTION:waka-->
 
