@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> codex
   pcstyledev |  | 35 mins today
 ```
 <!--END_SECTION:waka-->
