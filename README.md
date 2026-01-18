@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> package.json
-  pcstyledev | JSON | 0 secs today
+> Untitled-2
+  pcstyledev |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
