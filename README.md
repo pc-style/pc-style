@@ -16,11 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> skierowanie
-na
-lep
-do
-m
+> codex
   pcstyledev |  | 2 hrs 48 mins today
 ```
 <!--END_SECTION:waka-->
