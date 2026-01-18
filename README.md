@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> compact.md
+> CONTEXT.md
   odrodzenieoddechowe | Markdown | 3 hrs 44 mins today
 ```
 <!--END_SECTION:waka-->
