@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ENV-VARS
-  odrodzenieoddechowe |  | 5 hrs 18 mins today
+> idle
+  5 hrs 18 mins today
 ```
 <!--END_SECTION:waka-->
 
