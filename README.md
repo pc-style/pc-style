@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> OpenCode
   odrodzenieoddechowe |  | 3 hrs 12 mins today
 ```
 <!--END_SECTION:waka-->
