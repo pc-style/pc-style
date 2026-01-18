@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> codex
+> makerepo
   pcstyledev |  | 2 hrs 30 mins today
 ```
 <!--END_SECTION:waka-->
