@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  2 hrs 36 mins today
+> .env.local
+  yt_chat |  | 2 hrs 36 mins today
 ```
 <!--END_SECTION:waka-->
 
