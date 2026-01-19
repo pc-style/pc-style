@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> config.toml
-  odrodzenieoddechowe | TOML | 0 secs today
+> idle
+  0 secs today
 ```
 <!--END_SECTION:waka-->
 
