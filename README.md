@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  2 hrs 46 mins today
+> components.json
+  phantom-lagoon | JSON | 2 hrs 46 mins today
 ```
 <!--END_SECTION:waka-->
 
