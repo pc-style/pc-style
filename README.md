@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> zad2.cpp
-  aigateway | C++ | 31 mins today
+> zad3.cpp
+  aigateway | C++ | 54 mins today
 ```
 <!--END_SECTION:waka-->
 
