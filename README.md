@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> globals
-  ionized-magnetar | CSS | 1 hr 10 mins today
+> Untitled-1
+  ionized-magnetar |  | 1 hr 10 mins today
 ```
 <!--END_SECTION:waka-->
 
