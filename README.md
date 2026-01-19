@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> route.ts
-  aigateway | TypeScript | 54 mins today
+> .env.local
+  aigateway |  | 54 mins today
 ```
 <!--END_SECTION:waka-->
 
