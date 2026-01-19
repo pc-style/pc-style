@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.local
-  ionized-magnetar |  | 2 hrs 8 mins today
+> idle
+  2 hrs 8 mins today
 ```
 <!--END_SECTION:waka-->
 
