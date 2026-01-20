@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> .env.local
-  aigateway |  | 3 hrs 15 mins today
+> copilot-instructions.md
+  gh-skyline | Markdown | 3 hrs 15 mins today
 ```
 <!--END_SECTION:waka-->
 
