@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> rebuild.sh
+> build_normalAndVector.sh
   gh-skyline | Bash | 3 hrs 18 mins today
 ```
 <!--END_SECTION:waka-->
