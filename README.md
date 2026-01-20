@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> middleware.ts
-  pcstyledev | TypeScript | 19 mins today
+> .env.local
+  aigateway |  | 19 mins today
 ```
 <!--END_SECTION:waka-->
 
