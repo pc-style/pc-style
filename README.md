@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  3 hrs 36 mins today
+> build_normalAndVector.sh
+  gh-skyline | Bash | 3 hrs 36 mins today
 ```
 <!--END_SECTION:waka-->
 
