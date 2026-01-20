@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> wrangler.jsonc
-  email-workers | JSON | 2 hrs 11 mins today
+> idle
+  2 hrs 11 mins today
 ```
 <!--END_SECTION:waka-->
 
