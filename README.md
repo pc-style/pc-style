@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  3 hrs 15 mins today
+> .env.local
+  aigateway |  | 3 hrs 15 mins today
 ```
 <!--END_SECTION:waka-->
 
