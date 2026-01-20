@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> vercel.json
-  math-platform | JSON | 4 hrs 50 mins today
+> idle
+  4 hrs 50 mins today
 ```
 <!--END_SECTION:waka-->
 
