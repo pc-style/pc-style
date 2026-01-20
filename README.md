@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> copilot-instructions.md
+> issue.md
   gh-skyline | Markdown | 3 hrs 18 mins today
 ```
 <!--END_SECTION:waka-->
