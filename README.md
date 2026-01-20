@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  4 hrs 35 mins today
+> Untitled-2
+  gh-skyline |  | 4 hrs 35 mins today
 ```
 <!--END_SECTION:waka-->
 
