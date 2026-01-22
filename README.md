@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> cleanup-dev.ts
-  commands | TypeScript | 15 mins today
+> idle
+  15 mins today
 ```
 <!--END_SECTION:waka-->
 
