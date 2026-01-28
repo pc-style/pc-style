@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> vercel.com
-  commands |  | 1 hr 12 mins today
+> idle
+  1 hr 12 mins today
 ```
 <!--END_SECTION:waka-->
 
