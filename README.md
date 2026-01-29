@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-   today
+> amp
+  commands |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
 
