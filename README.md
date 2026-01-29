@@ -16,8 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  2 mins today
+> bun
+run
+server.ts
+  commands | TypeScript | 2 mins today
 ```
 <!--END_SECTION:waka-->
 
