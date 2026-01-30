@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> npm
+> pcstyle
   commands |  | 16 mins today
 ```
 <!--END_SECTION:waka-->
