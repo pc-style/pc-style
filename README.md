@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> curl
+> pcstyle
   commands |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
