@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ⠐
+> ✳
 Claude
 Code
   commands |  | 47 mins today
