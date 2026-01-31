@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> molt
+> amp
   commands |  | 23 mins today
 ```
 <!--END_SECTION:waka-->
