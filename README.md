@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> scraping
-  commands |  | 6 hrs 20 mins today
+> idle
+  6 hrs 20 mins today
 ```
 <!--END_SECTION:waka-->
 
