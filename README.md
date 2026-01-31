@@ -25,7 +25,7 @@ and
 bug
 hunt
 ...
-  commands |  | 5 mins today
+  commands |  | 12 mins today
 ```
 <!--END_SECTION:waka-->
 
