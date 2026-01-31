@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ⠂
-Claude
-Code
+> amp
   commands |  | 1 hr 39 mins today
 ```
 <!--END_SECTION:waka-->
