@@ -16,9 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ✳
-Claude
-Code
+> 🔔
+vi
+.env.local
   commands |  | 47 mins today
 ```
 <!--END_SECTION:waka-->
