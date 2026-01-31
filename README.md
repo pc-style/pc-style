@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  7 hrs 30 mins today
+> opencodeconfig
+  commands |  | 7 hrs 30 mins today
 ```
 <!--END_SECTION:waka-->
 
