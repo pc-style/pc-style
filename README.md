@@ -16,8 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  8 hrs today
+> OC
+|
+Moltbook
+skill.md
+instructions
+follow...
+  commands |  | 8 hrs today
 ```
 <!--END_SECTION:waka-->
 
