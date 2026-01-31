@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bun
-  commands | JavaScript | 5 hrs 11 mins today
+> scraping
+  commands |  | 5 hrs 11 mins today
 ```
 <!--END_SECTION:waka-->
 
