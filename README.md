@@ -16,13 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> echo
-test
-|
-amp
-threads
-h
-T
+> ✳
+Claude
+Code
   commands |  | 1 hr 32 mins today
 ```
 <!--END_SECTION:waka-->
