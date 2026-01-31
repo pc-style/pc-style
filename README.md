@@ -16,15 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Android
-Bubbles
-removal
-and
-bug
-hunt
-...
+> messenger
   commands |  | 5 mins today
 ```
 <!--END_SECTION:waka-->
