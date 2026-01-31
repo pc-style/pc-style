@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> ⠐
-Claude
-Code
+> molt
   commands |  | 23 mins today
 ```
 <!--END_SECTION:waka-->
