@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> opencodeconfig
+> pcstyle
   commands |  | 7 hrs 32 mins today
 ```
 <!--END_SECTION:waka-->
