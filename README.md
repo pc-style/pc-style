@@ -16,16 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Android
-Bubbles
-removal
-and
-bug
-hunt
-...
-  commands |  |  today
+> idle
+   today
 ```
 <!--END_SECTION:waka-->
 
