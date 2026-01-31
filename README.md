@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> moltbook
-  commands |  | 2 hrs 29 mins today
+> idle
+  2 hrs 29 mins today
 ```
 <!--END_SECTION:waka-->
 
