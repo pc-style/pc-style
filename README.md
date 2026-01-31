@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> grafik
+> opencodeconfig
   commands |  | 7 hrs 13 mins today
 ```
 <!--END_SECTION:waka-->
