@@ -16,8 +16,16 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  5 mins today
+> OC
+|
+Android
+Bubbles
+removal
+and
+bug
+hunt
+...
+  commands |  | 5 mins today
 ```
 <!--END_SECTION:waka-->
 
