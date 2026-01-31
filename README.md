@@ -16,13 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Moltbook
-skill.md
-instructions
-follow...
-  commands |  | 8 hrs 10 mins today
+> bun
+run
+server.ts
+  commands | TypeScript | 8 hrs 10 mins today
 ```
 <!--END_SECTION:waka-->
 
