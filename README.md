@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> codex
+> scraping
   commands |  | 4 hrs 46 mins today
 ```
 <!--END_SECTION:waka-->
