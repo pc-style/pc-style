@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bun
+> oddech_dev
   commands |  | 8 hrs 26 mins today
 ```
 <!--END_SECTION:waka-->
