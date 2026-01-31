@@ -16,7 +16,12 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> OC
+|
+Moltbook
+skill.md
+instructions
+follow...
   commands |  | 7 hrs 32 mins today
 ```
 <!--END_SECTION:waka-->
