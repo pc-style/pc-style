@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> 🔔
+> scraping
   commands |  | 5 hrs 11 mins today
 ```
 <!--END_SECTION:waka-->
