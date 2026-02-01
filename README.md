@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> git
+> odrodzenieoddechowe
   commands |  | 12 mins today
 ```
 <!--END_SECTION:waka-->
