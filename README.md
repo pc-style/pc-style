@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> chrome
+> amp
   commands |  | 41 mins today
 ```
 <!--END_SECTION:waka-->
