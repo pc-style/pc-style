@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> odrodzenieoddechowe
+> npx
   commands |  | 30 mins today
 ```
 <!--END_SECTION:waka-->
