@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Markdown
+> gh
   commands |  | 3 hrs 15 mins today
 ```
 <!--END_SECTION:waka-->
