@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> amp
   uBlock |  | 5 hrs 46 mins today
 ```
 <!--END_SECTION:waka-->
