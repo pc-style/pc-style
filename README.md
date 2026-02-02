@@ -16,7 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> OC
+|
+AGENTS.md
+guidelines
+for
+codebase
+bui...
   commands |  | 10 mins today
 ```
 <!--END_SECTION:waka-->
