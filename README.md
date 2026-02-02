@@ -16,15 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Codex
-config.toml
-UI:
-full
-100%
-optio...
-  uBlock |  | 8 hrs 31 mins today
+> idle
+  8 hrs 31 mins today
 ```
 <!--END_SECTION:waka-->
 
