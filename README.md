@@ -16,14 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Skill
-creation
-and
-handoff
-for
-AGENTS...
+> skills
   commands |  | 1 hr 15 mins today
 ```
 <!--END_SECTION:waka-->
