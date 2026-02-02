@@ -16,15 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Load
-HANDOFF.md
-and
-continue
-work
-pro...
-  uBlock |  | 7 hrs 1 min today
+> idle
+  7 hrs 1 min today
 ```
 <!--END_SECTION:waka-->
 
