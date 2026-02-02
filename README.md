@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> gh
+> bunx
+skills
+add
+claude
   commands |  | 3 hrs 15 mins today
 ```
 <!--END_SECTION:waka-->
