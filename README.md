@@ -16,7 +16,14 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> skills
+> OC
+|
+Skill
+creation
+and
+handoff
+for
+AGENTS...
   commands |  | 50 mins today
 ```
 <!--END_SECTION:waka-->
