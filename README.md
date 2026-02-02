@@ -16,10 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bunx
-skills
-add
-openclaw
+> skills
   commands |  | 50 mins today
 ```
 <!--END_SECTION:waka-->
