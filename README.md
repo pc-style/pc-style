@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> bun
+> github.com
   uBlock | TypeScript | 4 hrs 17 mins today
 ```
 <!--END_SECTION:waka-->
