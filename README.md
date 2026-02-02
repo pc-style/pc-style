@@ -16,14 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Handoff.md
-loading
-and
-task
-prioritiz...
-  commands |  | 2 hrs 50 mins today
+> idle
+  2 hrs 50 mins today
 ```
 <!--END_SECTION:waka-->
 
