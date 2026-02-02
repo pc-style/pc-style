@@ -23,7 +23,7 @@ guidelines
 for
 codebase
 bui...
-  commands |  | 10 mins today
+  commands |  | 25 mins today
 ```
 <!--END_SECTION:waka-->
 
