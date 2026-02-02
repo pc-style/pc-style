@@ -16,13 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Handoff.md
-load
-and
-task
-prioritization
+> pcstyle
   uBlock |  | 6 hrs 10 mins today
 ```
 <!--END_SECTION:waka-->
