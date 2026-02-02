@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
+> bunx
+skills
+add
+openclaw
   commands |  | 25 mins today
 ```
 <!--END_SECTION:waka-->
