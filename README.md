@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> codex
+> docs
   commands |  | 1 hr 27 mins today
 ```
 <!--END_SECTION:waka-->
