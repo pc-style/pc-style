@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> amp
+> spice
   uBlock |  | 1 hr 40 mins today
 ```
 <!--END_SECTION:waka-->
