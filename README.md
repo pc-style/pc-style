@@ -16,7 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> amp
+> OC
+|
+Universal
+harness
+for
+programmatic
+to...
   uBlock |  | 1 min today
 ```
 <!--END_SECTION:waka-->
