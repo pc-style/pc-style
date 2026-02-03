@@ -24,7 +24,7 @@ prompts
 for
 GOAL
 fea...
-  uBlock |  |  today
+  uBlock |  | 1 min today
 ```
 <!--END_SECTION:waka-->
 
