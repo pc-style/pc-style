@@ -16,7 +16,14 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> amp
+> OC
+|
+Handoff:
+extract
+prompts
+for
+GOAL
+fea...
   uBlock |  | 2 hrs 29 mins today
 ```
 <!--END_SECTION:waka-->
