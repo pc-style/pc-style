@@ -16,8 +16,14 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  2 hrs 37 mins today
+> OC
+|
+subag
+CLI
+design
+for
+context7
+  uBlock |  | 2 hrs 37 mins today
 ```
 <!--END_SECTION:waka-->
 
