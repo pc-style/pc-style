@@ -16,7 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OpenCode
+> OC
+|
+subag
+CLI
+design
+for
+context7
   uBlock |  | 1 hr 41 mins today
 ```
 <!--END_SECTION:waka-->
