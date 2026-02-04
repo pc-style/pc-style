@@ -16,7 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> subagent
+> OC
+|
+subag
+CLI
+design
+for
+context7
   uBlock |  | 2 hrs 6 mins today
 ```
 <!--END_SECTION:waka-->
