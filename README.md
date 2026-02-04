@@ -17,7 +17,7 @@ const stack = {
 <!--START_SECTION:waka-->
 ```
 > github.com
-  verified-device | Bash | 4 hrs 31 mins today
+  oauth | Bash | 4 hrs 31 mins today
 ```
 <!--END_SECTION:waka-->
 
