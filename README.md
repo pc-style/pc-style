@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> pcstyle
-  uBlock |  | 2 hrs 53 mins today
+> idle
+  2 hrs 53 mins today
 ```
 <!--END_SECTION:waka-->
 
