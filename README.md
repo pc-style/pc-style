@@ -16,13 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-YouTube
-live
-chat
-viewer
-prod
+> yt
   oauth |  | 23 mins today
 ```
 <!--END_SECTION:waka-->
