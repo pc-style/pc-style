@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> droid
-  oauth |  | 2 hrs 54 mins today
+> idle
+  2 hrs 54 mins today
 ```
 <!--END_SECTION:waka-->
 
