@@ -16,8 +16,14 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  23 mins today
+> OC
+|
+YouTube
+live
+chat
+viewer
+prod
+  oauth |  | 23 mins today
 ```
 <!--END_SECTION:waka-->
 
