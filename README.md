@@ -16,15 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Fix
-spacing
-between
-messages,
-add
-foo...
-  oauth |  | 23 mins today
+> idle
+  23 mins today
 ```
 <!--END_SECTION:waka-->
 
