@@ -16,13 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Yeet
-command:
-stage,
-diff,
-ca...
+> yt
   oauth |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
