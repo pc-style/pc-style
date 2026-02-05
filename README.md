@@ -16,7 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> yt
+> npx
+skills
+add
+claude
   oauth |  | 23 mins today
 ```
 <!--END_SECTION:waka-->
