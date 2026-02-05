@@ -16,15 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> OC
-|
-Fix
-spacing
-between
-messages,
-add
-foo...
-  oauth |  | 2 hrs 6 mins today
+> github.com
+  oauth | Bash | 2 hrs 6 mins today
 ```
 <!--END_SECTION:waka-->
 
