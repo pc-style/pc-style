@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> projects
+> monodeploy
   oauth |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
