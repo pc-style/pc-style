@@ -16,7 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> monodeploy
+> kimi
+mcp
+add
   oauth |  | 0 secs today
 ```
 <!--END_SECTION:waka-->
