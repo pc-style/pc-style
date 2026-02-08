@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> github.com
-  oauth | Bash | 4 mins today
+> idle
+  4 mins today
 ```
 <!--END_SECTION:waka-->
 
