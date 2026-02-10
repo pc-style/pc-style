@@ -16,8 +16,8 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> amp
-  oauth |  | 14 mins today
+> idle
+  14 mins today
 ```
 <!--END_SECTION:waka-->
 
