@@ -16,7 +16,16 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> skills
+> Kilo
+CLI
+|
+Creating
+qmd
+skill
+for
+AI
+context
+man...
   oauth |  | 2 hrs 44 mins today
 ```
 <!--END_SECTION:waka-->
