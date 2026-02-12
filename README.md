@@ -16,9 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> brew
-install
-sidecarn
+> pcstyle
   oauth |  |  today
 ```
 <!--END_SECTION:waka-->
