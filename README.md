@@ -16,7 +16,9 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> amp
+> bun
+run
+dev
   oauth |  | 55 mins today
 ```
 <!--END_SECTION:waka-->
