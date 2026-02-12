@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> midscene
+> ghostguide
   oauth |  | 1 hr 45 mins today
 ```
 <!--END_SECTION:waka-->
