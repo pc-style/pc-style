@@ -16,7 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> 👻
+> kilo
   oauth |  | 2 hrs 46 mins today
 ```
 <!--END_SECTION:waka-->
