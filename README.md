@@ -16,8 +16,14 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-  2 hrs 10 mins today
+> Kilo
+CLI
+|
+Repository
+Guidelines:
+AGENTS.md
+cont...
+  oauth |  | 2 hrs 10 mins today
 ```
 <!--END_SECTION:waka-->
 
