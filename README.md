@@ -16,7 +16,13 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> tailwind
+> Kilo
+CLI
+|
+Repository
+Guidelines:
+AGENTS.md
+cont...
   oauth |  | 2 hrs 10 mins today
 ```
 <!--END_SECTION:waka-->
