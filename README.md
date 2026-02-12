@@ -16,8 +16,10 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> idle
-   today
+> brew
+install
+sidecarn
+  oauth |  |  today
 ```
 <!--END_SECTION:waka-->
 
