@@ -16,13 +16,7 @@ const stack = {
 
 <!--START_SECTION:waka-->
 ```
-> Kilo
-CLI
-|
-Repository
-Guidelines:
-AGENTS.md
-cont...
+> ghostguide
   oauth |  | 2 hrs 10 mins today
 ```
 <!--END_SECTION:waka-->
