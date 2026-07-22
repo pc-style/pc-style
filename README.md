@@ -4,7 +4,7 @@ building opinionated tools at the intersection of **ai**, **code**, and **design
 
 ```typescript
 const stack = {
-  languages: ["TypeScript", "Python"],
+  languages: ["TypeScript", "Swift", "Python"],
   frontend: ["React", "Tailwind", "Vite"],
   runtime: ["Bun", "Node", "Convex"]
 };
@@ -12,25 +12,15 @@ const stack = {
 
 ---
 
-#### now coding
-
-<!--START_SECTION:waka-->
-```
-> idle
-  0 secs today
-```
-<!--END_SECTION:waka-->
-
----
-
-#### projects
+#### selected work
 
 | | |
 |---|---|
-| [**sen-web**](https://github.com/pcstyleorg/sen-web) | real-time multiplayer card game |
-| [**messenger-desktop**](https://github.com/pcstyleorg/messenger-desktop) | cross-platform messenger with privacy focus |
-| [**typesim**](https://github.com/pc-style/typesim) | ai-powered typing simulator |
-| [**pdf2md-cli**](https://github.com/pc-style/pdf2md-cli) | convert pdfs to clean markdown |
+| [**supply-chain-guard**](https://github.com/pc-style/supply-chain-guard) | local review gate for npm packages and VS Code extensions |
+| [**stream-guard**](https://github.com/pc-style/stream-guard) | on-device PII detection and blackout for macOS |
+| [**x.md**](https://x.pcstyle.dev) | public X converted into Markdown and JSON for agents |
+| [**amp plugins**](https://amp.pcstyle.dev) | source-first Amp extensions for context and agent workflows |
+| [**suborbs**](https://suborbs.pcstyle.dev) | fire-and-forget cloud Orb subagents for Amp |
 
 ---
 
