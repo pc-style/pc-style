@@ -8,7 +8,7 @@
 
 | project | maturity | focus |
 |---|---|---|
-| [**skill-view**](https://github.com/pc-style/skill-view) | published | local-only GUI for inspecting agent skills and their provenance |
+| [**skill-view**](https://github.com/pc-style/skill-view) | stable | local-only GUI for inspecting agent skills and their provenance |
 | [**supply-chain-guard**](https://github.com/pc-style/supply-chain-guard) | beta | local install gate for npm packages and VS Code extensions |
 | [**stream-guard**](https://github.com/pc-style/stream-guard) | beta | macOS sharing preview that blacks out on sensitive Accessibility text; no OCR |
 | [**x-md**](https://github.com/pc-style/x-md) | beta | public X posts, profiles, search, and graphs as Markdown or JSON |
