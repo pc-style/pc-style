@@ -539,6 +539,33 @@ def badge(icon, label, hot=False):
     return svg(w, h, "".join(parts), "", label)
 
 
+# ── 0x7f board ──────────────────────────────────
+
+
+def board():
+    rows = []
+    for line in (ROOT / "assets/solvers.txt").read_text().splitlines():
+        if line.strip() and not line.startswith("#"):
+            handle, _, day = line.partition(",")
+            rows.append((handle.strip(), day.strip()))
+    shown = rows[:8]
+    h = 64 + max(1, len(shown)) * 20
+    parts = [window(0, 0, W, h, "5", "0x7f", f"solved by {len(rows)}", meta_fill=P5 if rows else FAINT)]
+    parts.append(text(22, 46, f'<tspan fill="{INK}">$</tspan> <tspan fill="{FAINT}">cat</tspan> solvers', 12, DIM))
+    if not shown:
+        parts.append(text(22, 72, "nobody yet. five steps, one flag. it starts in the 0x7f block below.", 11, DIM))
+        parts.append(f'<rect class="blink" x="{22 + tw("nobody yet. five steps, one flag. it starts in the 0x7f block below.") + 4:.1f}" y="62" width="7" height="11" fill="{VIOLET}"/>')
+    for i, (handle, day) in enumerate(shown):
+        y = 72 + i * 20
+        parts.append(text(22, y, f"{i + 1:>2}", 11, VIOLET))
+        parts.append(text(52, y, escape(handle), 11, P5 if i == 0 else FG))
+        parts.append(text(W - 22, y, escape(day), 11, FAINT, "end"))
+    # dithered floor, the aurora's ground
+    parts.append(f'<rect x="1" y="{h - 9}" width="{W - 2}" height="8" fill="url(#shade)"/>')
+    css = ".blink{animation:blink 1.06s steps(1) infinite}@keyframes blink{50%{fill-opacity:0}}"
+    return svg(W, h, "".join(parts), css, f"0x7f puzzle: solved by {len(rows)}")
+
+
 # ── taskbar ─────────────────────────────────────
 
 
@@ -546,7 +573,7 @@ def taskbar(now):
     H = 26
     parts = [f'<rect width="{W}" height="{H}" fill="{BG}"/>', f'<line x1="0" y1=".5" x2="{W}" y2=".5" stroke="{LINE}"/>']
     x = 6
-    for label, on in ((":", False), ("1 me", True), ("2 activity", False), ("3 stats", False), ("4 open-source", False)):
+    for label, on in ((":", False), ("1 me", True), ("2 activity", False), ("3 stats", False), ("4 open-source", False), ("5 0x7f", False)):
         bw = tw(label) + 14
         parts.append(f'<rect x="{x + .5}" y="4.5" width="{bw:.1f}" height="17" fill="{SHADE if on else BG}" stroke="{VIOLET if on else LINE}"/>')
         parts.append(text(x + 7, 17, escape(label), 11, FG if on else DIM))
@@ -576,6 +603,7 @@ def main():
     (out / "oss.svg").write_text(projects_head(len(PROJECTS), data["starred"]["totalCount"]))
     for project, (_, maturity, blurb) in zip(data["projects"], PROJECTS):
         (out / f"oss-{project['name']}.svg").write_text(project_row(project, maturity, blurb, max_stars, now))
+    (out / "board.svg").write_text(board())
     (out / "taskbar.svg").write_text(taskbar(now))
     for name, icon, label in BADGES:
         (out / f"badge-{name}.svg").write_text(badge(icon, label, hot=name == "hire"))
