@@ -12,13 +12,13 @@
 <img src="https://raw.githubusercontent.com/pc-style/pc-style/output/stats.svg" width="100%" alt="Stats: contributions, stars, repositories, followers, and language share."/>
 
 <p>
-  <a href="https://github.com/pc-style?tab=repositories&type=source"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/projects.svg" width="100%" alt="open-source projects"/></a>
-  <a href="https://github.com/pc-style/skill-view"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/project-skill-view.svg" width="100%" alt="skill-view: local-only GUI for inspecting agent skills and their provenance"/></a>
-  <a href="https://github.com/pc-style/supply-chain-guard"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/project-supply-chain-guard.svg" width="100%" alt="supply-chain-guard: local install gate for npm packages and VS Code extensions"/></a>
-  <a href="https://github.com/pc-style/stream-guard"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/project-stream-guard.svg" width="100%" alt="stream-guard: macOS sharing preview that blacks out on sensitive Accessibility text"/></a>
-  <a href="https://github.com/pc-style/x-md"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/project-x-md.svg" width="100%" alt="x-md: public X posts, profiles, search, and graphs as Markdown or JSON"/></a>
-  <a href="https://github.com/pc-style/cool-my-skills"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/project-cool-my-skills.svg" width="100%" alt="cool-my-skills: on-demand loading for rarely used agent skills"/></a>
-  <a href="https://github.com/pc-style/amp-plugins"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/project-amp-plugins.svg" width="100%" alt="amp-plugins: inspectable Amp agent modes, tools, and context filters"/></a>
+  <a href="https://github.com/pc-style?tab=repositories&type=source"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss.svg" width="100%" alt="open-source projects"/></a>
+  <a href="https://github.com/pc-style/skill-view"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss-skill-view.svg" width="100%" alt="skill-view: local-only GUI for inspecting agent skills and their provenance"/></a>
+  <a href="https://github.com/pc-style/supply-chain-guard"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss-supply-chain-guard.svg" width="100%" alt="supply-chain-guard: local install gate for npm packages and VS Code extensions"/></a>
+  <a href="https://github.com/pc-style/stream-guard"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss-stream-guard.svg" width="100%" alt="stream-guard: macOS sharing preview that blacks out on sensitive Accessibility text"/></a>
+  <a href="https://github.com/pc-style/x-md"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss-x-md.svg" width="100%" alt="x-md: public X posts, profiles, search, and graphs as Markdown or JSON"/></a>
+  <a href="https://github.com/pc-style/cool-my-skills"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss-cool-my-skills.svg" width="100%" alt="cool-my-skills: on-demand loading for rarely used agent skills"/></a>
+  <a href="https://github.com/pc-style/amp-plugins"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss-amp-plugins.svg" width="100%" alt="amp-plugins: inspectable Amp agent modes, tools, and context filters"/></a>
 </p>
 
 <details>

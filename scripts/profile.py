@@ -573,9 +573,9 @@ def main():
     (out / "snake.svg").write_text(snake_svg)
     (out / "stats.svg").write_text(stats(data, total, now, login))
     max_stars = max(p["stargazerCount"] for p in data["projects"]) or 1
-    (out / "projects.svg").write_text(projects_head(len(PROJECTS), data["starred"]["totalCount"]))
+    (out / "oss.svg").write_text(projects_head(len(PROJECTS), data["starred"]["totalCount"]))
     for project, (_, maturity, blurb) in zip(data["projects"], PROJECTS):
-        (out / f"project-{project['name']}.svg").write_text(project_row(project, maturity, blurb, max_stars, now))
+        (out / f"oss-{project['name']}.svg").write_text(project_row(project, maturity, blurb, max_stars, now))
     (out / "taskbar.svg").write_text(taskbar(now))
     for name, icon, label in BADGES:
         (out / f"badge-{name}.svg").write_text(badge(icon, label, hot=name == "hire"))
