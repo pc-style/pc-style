@@ -1,10 +1,10 @@
 <a href="https://pcstyle.dev"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/header.svg" width="100%" alt="Adam Krupa (pcstyle), freelance full-stack developer from Poznań, Poland. Building local-first tools for AI-agent workflows."/></a>
 
 <p align="center">
-  <a href="https://pcstyle.dev">pcstyle.dev</a> ·
-  <a href="https://blog.pcstyle.dev">blog</a> ·
-  <a href="https://x.pcstyle.dev">x.md</a> ·
-  <a href="https://pcstyle.dev/contact/">hire me</a>
+  <a href="https://pcstyle.dev"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/badge-site.svg" height="30" alt="pcstyle.dev"/></a>
+  <a href="https://blog.pcstyle.dev"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/badge-blog.svg" height="30" alt="blog"/></a>
+  <a href="https://x.pcstyle.dev"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/badge-xmd.svg" height="30" alt="x.md"/></a>
+  <a href="https://pcstyle.dev/contact/"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/badge-hire.svg" height="30" alt="hire me"/></a>
 </p>
 
 <img src="https://raw.githubusercontent.com/pc-style/pc-style/output/snake.svg" width="100%" alt="My contribution graph for the last 12 months, eaten by a dithered snake."/>

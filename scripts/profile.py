@@ -41,6 +41,7 @@ PIX = {
     "oss": ["............", "...##..##...", "..#......#..", "..#......#..", "..#......#..", ".##......##.", "..#......#..", "..#......#..", "..#......#..", "...##..##...", "............", "............"],
     "github": ["............", "..#......#..", "..##....##..", "..#.####.#..", ".#........#.", ".#..#..#..#.", ".#........#.", ".#........#.", "..#......#..", "...######...", "............", "............"],
     "blog": ["............", "..########..", "..#......#..", "..#.####.#..", "..#......#..", "..#.####.#..", "..#......#..", "..#.####.#..", "..#......#..", "..########..", "............", "............"],
+    "contact": ["............", "............", ".##########.", ".#........#.", ".#.#....#.#.", ".#..#..#..#.", ".#...##...#.", ".#........#.", ".#........#.", ".##########.", "............", "............"],
     "xmd": ["............", "............", "..#......#..", "...#....#...", "....#..#....", ".....##.....", ".....##.....", "....#..#....", "...#....#...", "..#......#..", "............", "............"],
 }
 CTL = {
@@ -496,6 +497,28 @@ def card(i, project, maturity, blurb, now):
     return svg(w, h, "".join(parts), "", f"{name}: {blurb}")
 
 
+# ── link badges ─────────────────────────────────
+
+BADGES = [("site", "me", "pcstyle.dev"), ("blog", "blog", "blog"), ("xmd", "xmd", "x.md"), ("hire", "contact", "hire me")]
+# 5x5 outbound arrow, as on the homepage's external links
+ARROW = [".####", "...##", "..#.#", ".#..#", "#...."]
+
+
+def badge(icon, label, hot=False):
+    h, size = 30, 13
+    w = round(30 + 10 + tw(label, size) + 22)
+    edge = VIOLET if hot else LINE
+    parts = [
+        f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" fill="{BG}" stroke="{edge}"/>',
+        f'<rect x="1" y="1" width="28" height="28" fill="url(#{"bar-on" if hot else "bar"})"/>',
+        f'<line x1="29.5" y1="1" x2="29.5" y2="{h - 1}" stroke="{edge}"/>',
+        pix(icon, 3, 3, 2, VIOLET if hot else FG),
+        text(40, 20, escape(label), size, FG),
+        pix("arrow", w - 14, 9, 1, VIOLET if hot else DIM, {"arrow": ARROW}),
+    ]
+    return svg(w, h, "".join(parts), "", label)
+
+
 # ── taskbar ─────────────────────────────────────
 
 
@@ -532,6 +555,8 @@ def main():
     for i, (project, (_, maturity, blurb)) in enumerate(zip(data["projects"], PROJECTS)):
         (out / f"project-{project['name']}.svg").write_text(card(i, project, maturity, blurb, now))
     (out / "taskbar.svg").write_text(taskbar(now))
+    for name, icon, label in BADGES:
+        (out / f"badge-{name}.svg").write_text(badge(icon, label, hot=name == "hire"))
     for f in sorted(out.iterdir()):
         print(f"{f.name:32} {f.stat().st_size / 1024:7.1f} KB")
 
