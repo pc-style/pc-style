@@ -414,11 +414,12 @@ def snake(data):
 # ── stats ───────────────────────────────────────
 
 
-def stats(data, total, now):
+def stats(data, total, now, login):
     H = 214
     stars = sum(r["stargazerCount"] for r in data["starred"]["nodes"])
     original = data["starred"]["totalCount"]
     recent = data["recent"]["nodes"]
+    latest = next(r for r in recent if r["name"].lower() != login.lower())  # skip this profile repo
     # each repo counts once, split by its own byte mix, so one huge repo can't drown the rest
     langs = {}
     for r in recent:
@@ -437,7 +438,7 @@ def stats(data, total, now):
         ("stars", f"★ {stars:,}", f"across {original} original repos"),
         ("repos", f"{data['public']['totalCount']}", "public"),
         ("followers", f"{data['followers']['totalCount']}", ""),
-        ("last push", recent[0]["name"], ago(recent[0]["pushedAt"], now)),
+        ("last push", latest["name"], ago(latest["pushedAt"], now)),
     ]
     for i, (k, v, note) in enumerate(rows):
         y = 56 + i * 28
@@ -527,7 +528,7 @@ def main():
     (out / "header.svg").write_text(header())
     snake_svg, total = snake(data)
     (out / "snake.svg").write_text(snake_svg)
-    (out / "stats.svg").write_text(stats(data, total, now))
+    (out / "stats.svg").write_text(stats(data, total, now, login))
     for i, (project, (_, maturity, blurb)) in enumerate(zip(data["projects"], PROJECTS)):
         (out / f"project-{project['name']}.svg").write_text(card(i, project, maturity, blurb, now))
     (out / "taskbar.svg").write_text(taskbar(now))
