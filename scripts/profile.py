@@ -31,7 +31,7 @@ PROJECTS = [
     ("stream-guard", "beta", "macOS sharing preview that blacks out on sensitive Accessibility text; no OCR"),
     ("x-md", "beta", "public X posts, profiles, search, and graphs as Markdown or JSON"),
     ("cool-my-skills", "beta", "on-demand loading for rarely used agent skills"),
-    ("amp-plugins", "experiments", "inspectable Amp agent modes, tools, and context filters"),
+    ("amp-plugins", "experiment", "inspectable Amp agent modes, tools, and context filters"),
 ]
 
 # 12x12 desktop icons and 8x8 window controls from homepage/src/components/Desktop.astro
@@ -205,17 +205,6 @@ def ago(iso, now):
         if s >= size:
             return f"{int(s // size)}{unit} ago"
     return "just now"
-
-
-def wrap(s, width):
-    lines, cur = [], ""
-    for word in s.split():
-        if cur and len(cur) + 1 + len(word) > width:
-            lines.append(cur)
-            cur = word
-        else:
-            cur = f"{cur} {word}".strip()
-    return lines + [cur] if cur else lines
 
 
 # ── header ──────────────────────────────────────
@@ -467,34 +456,65 @@ def stats(data, total, now, login):
     return svg(W, H, "".join(parts), "", "GitHub stats and top languages")
 
 
-# ── project windows ─────────────────────────────
+# ── open-source list ────────────────────────────
+
+# 12x12 icons for the projects, drawn on the same grid as the desktop set
+PROJECT_PIX = {
+    "skill-view": PIX["oss"],
+    "supply-chain-guard": ["............", "..########..", ".#........#.", ".#...##...#.", ".#..####..#.", ".#...##...#.", ".#........#.", "..#......#..", "...#....#...", "....#..#....", ".....##.....", "............"],
+    "stream-guard": ["............", "............", "............", "...######...", "..#......#..", ".#...##...#.", "#...####...#", ".#...##...#.", "..#......#..", "...######...", "............", "............"],
+    "x-md": PIX["xmd"],
+    "cool-my-skills": ["............", ".....#......", "..#..#..#...", "...#.#.#....", "....###.....", ".#########..", "....###.....", "...#.#.#....", "..#..#..#...", ".....#......", "............", "............"],
+    "amp-plugins": ["............", "...#...#....", "...#...#....", "..#######...", "..#.....#...", "..#.....#...", "...#...#....", "....###.....", ".....#......", ".....#......", ".....##.....", "............"],
+}
+COL_STATUS, COL_LANG, COL_END = 624, 722, W - 16
 
 
-def card(i, project, maturity, blurb, now):
-    w, h = 440, 150
+def projects_head(count, original):
+    h = 46
+    parts = [
+        f'<rect x=".5" y=".5" width="{W - 1}" height="{h}" fill="{GLASS}" stroke="{LINE}"/>',
+        window(0, 0, W, 23, "4", "open-source", f"{count} picks of {original} repos"),
+        text(62, 39, "project", 11, FAINT),
+        text(COL_STATUS, 39, "status", 11, FAINT),
+        text(COL_LANG, 39, "lang", 11, FAINT),
+        text(COL_END, 39, "★ · pushed", 11, FAINT, "end"),
+    ]
+    return svg(W, h, "".join(parts), "", "open-source projects")
+
+
+def project_row(project, maturity, blurb, max_stars, now):
+    h = 56
     name, stars = project["name"], project["stargazerCount"]
     lang = project["primaryLanguage"] or {"name": "", "color": DIM}
-    parts = [window(0, 0, w, h, str(4 + i), name, f"★ {stars}", meta_fill=P5 if stars >= 50 else DIM)]
-    # dithered aurora-floor in the bottom corner
-    parts.append(f'<rect x="1" y="{h - 40}" width="{w - 2}" height="20" fill="url(#shade)"/>')
-    parts.append(f'<rect x="1" y="{h - 20}" width="{w - 2}" height="19" fill="url(#bar)"/>')
-    parts.append(text(18, 52, escape(name), 22, FG))
-    for j, line in enumerate(wrap(blurb, 56)[:2]):
-        parts.append(text(18, 76 + j * 17, escape(line), 11, DIM))
+    hot = stars == max_stars
+    parts = [
+        f'<rect x=".5" y=".5" width="{W - 1}" height="{h - 1}" fill="{GLASS}" stroke="{LINE}"/>',
+        f'<rect x="1" y="1" width="46" height="{h - 2}" fill="url(#{"bar-on" if hot else "bar"})"/>',
+        f'<line x1="47.5" y1="1" x2="47.5" y2="{h - 1}" stroke="{LINE}"/>',
+        f'<rect x="10" y="{h / 2 - 14}" width="28" height="28" fill="{BG}"/>',
+        pix(name, 12, h / 2 - 12, 2, VIOLET if hot else FG, PROJECT_PIX),
+        text(62, 25, escape(name), 15, FG),
+        text(62, 44, escape(blurb), 11, DIM),
+    ]
     tag = f"[{maturity}]"
     tag_fill = P5 if maturity == "stable" else (VIOLET if maturity == "beta" else DIM)
-    fy = h - 26
-    parts.append(f'<rect x="16.5" y="{fy - 12.5}" width="{tw(tag) + 8:.1f}" height="17" fill="{BG}" stroke="{LINE}"/>')
-    parts.append(text(20, fy, tag, 11, tag_fill))
-    cx = 16 + tw(tag) + 18
+    parts.append(text(COL_STATUS, 25, tag, 11, tag_fill))
     if lang["name"]:
-        parts.append(f'<rect x="{cx:.1f}" y="{fy - 12.5}" width="{tw(lang["name"].lower()) + 22:.1f}" height="17" fill="{BG}"/>')
-        parts.append(f'<rect x="{cx + 5:.1f}" y="{fy - 7}" width="6" height="6" fill="{lang["color"] or DIM}"/>')
-        parts.append(text(cx + 15, fy, escape(lang["name"].lower()), 11, FG))
-    pushed = f"pushed {ago(project['pushedAt'], now)}"
-    parts.append(f'<rect x="{w - 18 - tw(pushed) - 8:.1f}" y="{fy - 12.5}" width="{tw(pushed) + 8:.1f}" height="17" fill="{BG}"/>')
-    parts.append(text(w - 22, fy, pushed, 11, FAINT, "end"))
-    return svg(w, h, "".join(parts), "", f"{name}: {blurb}")
+        parts.append(f'<rect x="{COL_LANG}" y="18" width="6" height="6" fill="{lang["color"] or DIM}"/>')
+        parts.append(text(COL_LANG + 11, 25, escape(lang["name"].lower()), 11, FG))
+    parts.append(text(COL_END, 25, f"★ {stars}", 11, P5 if hot else FG, "end"))
+    # stars as a dithered bar, relative to the most starred project
+    track = 150
+    bw = max(4, round(track * stars / max_stars / 2) * 2)
+    solid = max(0, bw - 12)
+    parts.append(f'<rect x="{COL_STATUS}" y="37" width="{track}" height="6" fill="url(#shade)"/>')
+    if solid:
+        parts.append(f'<rect x="{COL_STATUS}" y="37" width="{solid}" height="6" fill="{P4 if hot else P3}"/>')
+    parts.append(f'<rect x="{COL_STATUS + solid}" y="37" width="{min(6, bw)}" height="6" fill="url(#fade1)"/>')
+    parts.append(f'<rect x="{COL_STATUS + solid + 6}" y="37" width="{max(0, min(6, bw - 6))}" height="6" fill="url(#fade2)"/>')
+    parts.append(text(COL_END, 44, ago(project["pushedAt"], now), 11, FAINT, "end"))
+    return svg(W, h, "".join(parts), "", f"{name}: {blurb}")
 
 
 # ── link badges ─────────────────────────────────
@@ -526,7 +546,7 @@ def taskbar(now):
     H = 26
     parts = [f'<rect width="{W}" height="{H}" fill="{BG}"/>', f'<line x1="0" y1=".5" x2="{W}" y2=".5" stroke="{LINE}"/>']
     x = 6
-    for label, on in ((":", False), ("1 me", True), ("2 activity", False), ("3 stats", False), ("4 projects", False)):
+    for label, on in ((":", False), ("1 me", True), ("2 activity", False), ("3 stats", False), ("4 open-source", False)):
         bw = tw(label) + 14
         parts.append(f'<rect x="{x + .5}" y="4.5" width="{bw:.1f}" height="17" fill="{SHADE if on else BG}" stroke="{VIOLET if on else LINE}"/>')
         parts.append(text(x + 7, 17, escape(label), 11, FG if on else DIM))
@@ -552,8 +572,10 @@ def main():
     snake_svg, total = snake(data)
     (out / "snake.svg").write_text(snake_svg)
     (out / "stats.svg").write_text(stats(data, total, now, login))
-    for i, (project, (_, maturity, blurb)) in enumerate(zip(data["projects"], PROJECTS)):
-        (out / f"project-{project['name']}.svg").write_text(card(i, project, maturity, blurb, now))
+    max_stars = max(p["stargazerCount"] for p in data["projects"]) or 1
+    (out / "projects.svg").write_text(projects_head(len(PROJECTS), data["starred"]["totalCount"]))
+    for project, (_, maturity, blurb) in zip(data["projects"], PROJECTS):
+        (out / f"project-{project['name']}.svg").write_text(project_row(project, maturity, blurb, max_stars, now))
     (out / "taskbar.svg").write_text(taskbar(now))
     for name, icon, label in BADGES:
         (out / f"badge-{name}.svg").write_text(badge(icon, label, hot=name == "hire"))
