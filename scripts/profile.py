@@ -24,6 +24,8 @@ BG, GLASS, FG, DIM, FAINT, LINE = "#0a0a0b", "#0a0a0beb", "#e8e6e3", "#8a8782", 
 ACCENT, VIOLET, INK, SHADE = "#8c1862", "#9d5cff", "#e45aa3", "#2a1a4d"
 P1, P2, P3, P4, P5 = "#271846", "#563390", "#8f54ea", "#d7559a", "#f6c5df"
 EMPTY = "#16131a"
+NEUTRAL, GREYBAR = "#1d1c21", "#5d5a63"
+SOLVERS_API = "https://0x7f.pcstyle.dev/api/solvers"
 
 PROJECTS = [
     ("skill-view", "stable", "local-only GUI for inspecting agent skills and their provenance"),
@@ -123,14 +125,16 @@ def defs():
         )
 
     return "<defs>" + "".join([
-        checker("bar", SHADE),
+        checker("bar", NEUTRAL),
         checker("bar-on", "#3a2470"),
         checker("l1", P2, EMPTY),
         checker("l3", P3, P2),
         checker("hi", P5, P4),
-        checker("fade1", P3),
-        sparse("fade2", P3),
-        sparse("shade", SHADE),
+        checker("fade1", GREYBAR),
+        sparse("fade2", GREYBAR),
+        checker("fade1-hot", P4),
+        sparse("fade2-hot", P4),
+        sparse("shade", NEUTRAL),
     ]) + "</defs>"
 
 
@@ -232,18 +236,8 @@ def header():
         text(10, 15, '<tspan fill="#8a8782">~/</tspan>pcstyle', 11, FG),
         text(W - 10, 15, "pcstyle.dev", 11, DIM, "end"),
     ]
-    # desktop icons down the left
-    for i, (icon, label) in enumerate((("me", "me"), ("work", "work"), ("oss", "open-source"), ("github", "github"), ("blog", "blog"), ("xmd", "x.md"))):
-        ty = 36 + i * 54
-        on = icon == "me"
-        parts.append(f'<rect x="{28.5}" y="{ty + .5}" width="31" height="31" fill="{BG}" stroke="{VIOLET if on else LINE}"/>')
-        parts.append(pix(icon, 32, ty + 4, 2, VIOLET if on else (DIM if icon in ("github", "blog", "xmd") else FG)))
-        lw = tw(label) + 6
-        parts.append(f'<rect x="{44 - lw / 2:.1f}" y="{ty + 35}" width="{lw:.1f}" height="13" fill="{BG}"/>')
-        parts.append(text(44, ty + 45, ("• " if on else "") + label, 11, FG if on else DIM, "middle"))
-
     # the "me" window
-    x, y, w, h = 168, 92, 600, 236
+    x, y, w, h = (W - 600) // 2, 92, 600, 236
     parts.append(window(x, y, w, h, "1", "me", "~/pcstyle", focus=True))
     bx = x + 22
     parts.append(text(bx, y + 66, "Adam Krupa", 33, FG))
@@ -449,9 +443,10 @@ def stats(data, total, now, login):
         solid = max(0, bw - 24)
         parts.append(f'<rect x="{bx}" y="{y - 9}" width="{track}" height="10" fill="url(#shade)"/>')
         if solid:
-            parts.append(f'<rect x="{bx}" y="{y - 9}" width="{solid}" height="10" fill="{P3}"/>')
-        parts.append(f'<rect x="{bx + solid}" y="{y - 9}" width="{min(12, bw)}" height="10" fill="url(#fade1)"/>')
-        parts.append(f'<rect x="{bx + solid + 12}" y="{y - 9}" width="{max(0, min(12, bw - 12))}" height="10" fill="url(#fade2)"/>')
+            parts.append(f'<rect x="{bx}" y="{y - 9}" width="{solid}" height="10" fill="{P4 if i == 0 else GREYBAR}"/>')
+        hot = "-hot" if i == 0 else ""
+        parts.append(f'<rect x="{bx + solid}" y="{y - 9}" width="{min(12, bw)}" height="10" fill="url(#fade1{hot})"/>')
+        parts.append(f'<rect x="{bx + solid + 12}" y="{y - 9}" width="{max(0, min(12, bw - 12))}" height="10" fill="url(#fade2{hot})"/>')
         parts.append(text(W - 22, y, f"{share * 100:.0f}%", 11, DIM, "end"))
     return svg(W, H, "".join(parts), "", "GitHub stats and top languages")
 
@@ -484,36 +479,37 @@ def projects_head(count, original):
 
 
 def project_row(project, maturity, blurb, max_stars, now):
-    h = 56
+    h = 46
     name, stars = project["name"], project["stargazerCount"]
     lang = project["primaryLanguage"] or {"name": "", "color": DIM}
     hot = stars == max_stars
     parts = [
         f'<rect x=".5" y=".5" width="{W - 1}" height="{h - 1}" fill="{GLASS}" stroke="{LINE}"/>',
-        f'<rect x="1" y="1" width="46" height="{h - 2}" fill="url(#{"bar-on" if hot else "bar"})"/>',
-        f'<line x1="47.5" y1="1" x2="47.5" y2="{h - 1}" stroke="{LINE}"/>',
-        f'<rect x="10" y="{h / 2 - 14}" width="28" height="28" fill="{BG}"/>',
-        pix(name, 12, h / 2 - 12, 2, VIOLET if hot else FG, PROJECT_PIX),
-        text(62, 25, escape(name), 15, FG),
-        text(62, 44, escape(blurb), 11, DIM),
+        f'<rect x="1" y="1" width="42" height="{h - 2}" fill="url(#{"bar-on" if hot else "bar"})"/>',
+        f'<line x1="43.5" y1="1" x2="43.5" y2="{h - 1}" stroke="{LINE}"/>',
+        f'<rect x="8" y="{h / 2 - 14}" width="28" height="28" fill="{BG}"/>',
+        pix(name, 10, h / 2 - 12, 2, P5 if hot else FG, PROJECT_PIX),
+        text(58, 20, escape(name), 13, FG),
+        text(58, 36, escape(blurb), 11, DIM),
     ]
     tag = f"[{maturity}]"
-    tag_fill = P5 if maturity == "stable" else (VIOLET if maturity == "beta" else DIM)
-    parts.append(text(COL_STATUS, 25, tag, 11, tag_fill))
+    tag_fill = P5 if maturity == "stable" else (FG if maturity == "beta" else DIM)
+    parts.append(text(COL_STATUS, 20, tag, 11, tag_fill))
     if lang["name"]:
-        parts.append(f'<rect x="{COL_LANG}" y="18" width="6" height="6" fill="{lang["color"] or DIM}"/>')
-        parts.append(text(COL_LANG + 11, 25, escape(lang["name"].lower()), 11, FG))
-    parts.append(text(COL_END, 25, f"★ {stars}", 11, P5 if hot else FG, "end"))
+        parts.append(f'<rect x="{COL_LANG}" y="13" width="6" height="6" fill="{lang["color"] or DIM}"/>')
+        parts.append(text(COL_LANG + 11, 20, escape(lang["name"].lower()), 11, FG))
+    parts.append(text(COL_END, 20, f"★ {stars}", 11, P5 if hot else FG, "end"))
     # stars as a dithered bar, relative to the most starred project
     track = 150
     bw = max(4, round(track * stars / max_stars / 2) * 2)
     solid = max(0, bw - 12)
-    parts.append(f'<rect x="{COL_STATUS}" y="37" width="{track}" height="6" fill="url(#shade)"/>')
+    heat = "-hot" if hot else ""
+    parts.append(f'<rect x="{COL_STATUS}" y="29" width="{track}" height="6" fill="url(#shade)"/>')
     if solid:
-        parts.append(f'<rect x="{COL_STATUS}" y="37" width="{solid}" height="6" fill="{P4 if hot else P3}"/>')
-    parts.append(f'<rect x="{COL_STATUS + solid}" y="37" width="{min(6, bw)}" height="6" fill="url(#fade1)"/>')
-    parts.append(f'<rect x="{COL_STATUS + solid + 6}" y="37" width="{max(0, min(6, bw - 6))}" height="6" fill="url(#fade2)"/>')
-    parts.append(text(COL_END, 44, ago(project["pushedAt"], now), 11, FAINT, "end"))
+        parts.append(f'<rect x="{COL_STATUS}" y="29" width="{solid}" height="6" fill="{P4 if hot else GREYBAR}"/>')
+    parts.append(f'<rect x="{COL_STATUS + solid}" y="29" width="{min(6, bw)}" height="6" fill="url(#fade1{heat})"/>')
+    parts.append(f'<rect x="{COL_STATUS + solid + 6}" y="29" width="{max(0, min(6, bw - 6))}" height="6" fill="url(#fade2{heat})"/>')
+    parts.append(text(COL_END, 36, ago(project["pushedAt"], now), 11, FAINT, "end"))
     return svg(W, h, "".join(parts), "", f"{name}: {blurb}")
 
 
@@ -542,19 +538,25 @@ def badge(icon, label, hot=False):
 # ── 0x7f board ──────────────────────────────────
 
 
-def board():
-    rows = []
-    for line in (ROOT / "assets/solvers.txt").read_text().splitlines():
-        if line.strip() and not line.startswith("#"):
-            handle, _, day = line.partition(",")
-            rows.append((handle.strip(), day.strip()))
+def solvers():
+    """The quest site's board; an outage renders as nobody rather than failing the run."""
+    try:
+        req = urllib.request.Request(SOLVERS_API, headers={"User-Agent": "pc-style-profile"})
+        with urllib.request.urlopen(req, timeout=15) as res:
+            return [(r["handle"], r["at"][:10]) for r in json.load(res)]
+    except Exception as err:  # noqa: BLE001
+        print(f"solvers unavailable: {err}")
+        return []
+
+
+def board(rows):
     shown = rows[:8]
     h = 64 + max(1, len(shown)) * 20
     parts = [window(0, 0, W, h, "5", "0x7f", f"solved by {len(rows)}", meta_fill=P5 if rows else FAINT)]
     parts.append(text(22, 46, f'<tspan fill="{INK}">$</tspan> <tspan fill="{FAINT}">cat</tspan> solvers', 12, DIM))
     if not shown:
-        parts.append(text(22, 72, "nobody yet. five steps, one flag. it starts in the 0x7f block below.", 11, DIM))
-        parts.append(f'<rect class="blink" x="{22 + tw("nobody yet. five steps, one flag. it starts in the 0x7f block below.") + 4:.1f}" y="62" width="7" height="11" fill="{VIOLET}"/>')
+        parts.append(text(22, 72, "nobody yet. nine steps, one board. it starts in the 0x7f block below.", 11, DIM))
+        parts.append(f'<rect class="blink" x="{22 + tw("nobody yet. nine steps, one board. it starts in the 0x7f block below.") + 4:.1f}" y="62" width="7" height="11" fill="{VIOLET}"/>')
     for i, (handle, day) in enumerate(shown):
         y = 72 + i * 20
         parts.append(text(22, y, f"{i + 1:>2}", 11, VIOLET))
@@ -564,30 +566,6 @@ def board():
     parts.append(f'<rect x="1" y="{h - 9}" width="{W - 2}" height="8" fill="url(#shade)"/>')
     css = ".blink{animation:blink 1.06s steps(1) infinite}@keyframes blink{50%{fill-opacity:0}}"
     return svg(W, h, "".join(parts), css, f"0x7f puzzle: solved by {len(rows)}")
-
-
-# ── taskbar ─────────────────────────────────────
-
-
-def taskbar(now):
-    H = 26
-    parts = [f'<rect width="{W}" height="{H}" fill="{BG}"/>', f'<line x1="0" y1=".5" x2="{W}" y2=".5" stroke="{LINE}"/>']
-    x = 6
-    for label, on in ((":", False), ("1 me", True), ("2 activity", False), ("3 stats", False), ("4 open-source", False), ("5 0x7f", False)):
-        bw = tw(label) + 14
-        parts.append(f'<rect x="{x + .5}" y="4.5" width="{bw:.1f}" height="17" fill="{SHADE if on else BG}" stroke="{VIOLET if on else LINE}"/>')
-        parts.append(text(x + 7, 17, escape(label), 11, FG if on else DIM))
-        x += bw + 4
-    stamp = now.strftime("%H:%M")
-    right = [("theme night", DIM), (f"{now:%Y-%m-%d} {stamp} UTC", FG), ("?", DIM)]
-    x = W - 6
-    for label, fill in reversed(right):
-        bw = tw(label) + 14
-        x -= bw
-        parts.append(f'<rect x="{x + .5:.1f}" y="4.5" width="{bw:.1f}" height="17" fill="{BG}" stroke="{LINE}"/>')
-        parts.append(text(x + 7, 17, label, 11, fill))
-        x -= 4
-    return svg(W, H, "".join(parts), "", f"last updated {now:%Y-%m-%d %H:%M} UTC")
 
 
 def main():
@@ -603,8 +581,7 @@ def main():
     (out / "oss.svg").write_text(projects_head(len(PROJECTS), data["starred"]["totalCount"]))
     for project, (_, maturity, blurb) in zip(data["projects"], PROJECTS):
         (out / f"oss-{project['name']}.svg").write_text(project_row(project, maturity, blurb, max_stars, now))
-    (out / "board.svg").write_text(board())
-    (out / "taskbar.svg").write_text(taskbar(now))
+    (out / "board.svg").write_text(board(solvers()))
     for name, icon, label in BADGES:
         (out / f"badge-{name}.svg").write_text(badge(icon, label, hot=name == "hire"))
     for f in sorted(out.iterdir()):
