@@ -1,6 +1,7 @@
-# An issue titled "sign" (any case; Actions compares strings case-insensitively) signs the guestbook: label it, thank the visitor, close
-# it, and re-render the profile. Any other issue is left alone. Only the issue
-# number and author login reach the shell, both through env.
+# An issue titled "sign" signs the guestbook (Actions compares strings
+# case-insensitively): label it, thank the visitor, close it, and re-render the
+# profile. Any other issue is left alone. Only the issue number and author
+# login reach the shell, both through env.
 name: guestbook
 
 on:
