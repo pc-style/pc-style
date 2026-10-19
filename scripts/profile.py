@@ -44,8 +44,7 @@ THEMES = {
 }
 # Poznań hours: dawn is ice, midday mono, dusk ember, the rest night
 SCHEDULE = [(5, "ice"), (11, "mono"), (15, "ember"), (21, "night")]
-GUESTBOOK_LABEL = "guestbook"
-SOLVERS_API = "https://0x7f.pcstyle.dev/api/solvers"
+
 
 PROJECTS = [
     ("skill-view", "stable", "local-only GUI for inspecting agent skills and their provenance"),
@@ -83,9 +82,6 @@ GQL = """query($login: String!) { user(login: $login) {
     nodes { name pushedAt languages(first: 6, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } } }
   public: repositories(privacy: PUBLIC, ownerAffiliations: OWNER) { totalCount }
 } }"""
-GUESTBOOK_GQL = """query($login: String!) { repository(owner: $login, name: $login) {
-  issues(labels: ["%s"], first: 100, states: [OPEN, CLOSED], orderBy: {field: CREATED_AT, direction: DESC}) {
-    nodes { createdAt author { login avatarUrl(size: 96) } } } } }""" % GUESTBOOK_LABEL
 REPO_GQL = """repository(owner: $login, name: "%s") { name stargazerCount forkCount pushedAt url primaryLanguage { name color } }"""
 LEVELS = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
 
@@ -110,12 +106,6 @@ def fetch(login, token):
     ) + "}"
     repos = gql(repos_q, login, token)
     data["projects"] = [repos[f"r{i}"] for i in range(len(PROJECTS))]
-    seen, data["guests"] = set(), []
-    for issue in gql(GUESTBOOK_GQL, login, token)["repository"]["issues"]["nodes"]:
-        author = issue["author"]
-        if author and author["login"].lower() not in seen:
-            seen.add(author["login"].lower())
-            data["guests"].append({"login": author["login"], "avatar": author["avatarUrl"], "at": issue["createdAt"][:10]})
     return data
 
 
@@ -232,8 +222,8 @@ B8 = [0, 32, 8, 40, 2, 34, 10, 42, 48, 16, 56, 24, 50, 18, 58, 26, 12, 44, 4, 36
       3, 35, 11, 43, 1, 33, 9, 41, 51, 19, 59, 27, 49, 17, 57, 25, 15, 47, 7, 39, 13, 45, 5, 37, 63, 31, 55, 23, 61, 29, 53, 21]
 
 
-def dither_avatar(url, cells):
-    """An avatar through the aurora's Bayer 8x8 into the theme palette, as a data URI; dark pixels stay transparent."""
+def dither_levels(url, cells):
+    """An avatar through the aurora's Bayer 8x8 into six levels; level 0 (dark) renders transparent."""
     req = urllib.request.Request(url, headers={"User-Agent": "pc-style-profile"})
     with urllib.request.urlopen(req, timeout=20) as res:
         img = Image.open(io.BytesIO(res.read())).convert("L")
@@ -244,7 +234,12 @@ def dither_avatar(url, cells):
     lv += (v - lv) > np.tile(th, (cells // 8 + 1, cells // 8 + 1))[:cells, :cells]
     lv = np.clip(lv, 0, 5)
     lv[np.asarray(img) < 28] = 0
-    out = Image.fromarray(lv.astype(np.uint8), mode="P")
+    return lv.astype(np.uint8)
+
+
+def dither_avatar(url, cells):
+    """dither_levels in the theme palette, as a PNG data URI."""
+    out = Image.fromarray(dither_levels(url, cells), mode="P")
     out.putpalette([round(c) for p in PALETTE for c in p])
     buf = io.BytesIO()
     out.save(buf, format="PNG", transparency=0, optimize=True)
@@ -642,70 +637,6 @@ def badge(icon, label, hot=False):
     return svg(w, h, "".join(parts), "", label)
 
 
-# ── 0x7f board ──────────────────────────────────
-
-
-def solvers():
-    """The quest site's board; an outage renders as nobody rather than failing the run."""
-    try:
-        req = urllib.request.Request(SOLVERS_API, headers={"User-Agent": "pc-style-profile"})
-        with urllib.request.urlopen(req, timeout=15) as res:
-            return [(r["handle"], r["at"][:10]) for r in json.load(res)]
-    except Exception as err:  # noqa: BLE001
-        print(f"solvers unavailable: {err}")
-        return []
-
-
-def board(rows):
-    shown = rows[:8]
-    h = 64 + max(1, len(shown)) * 20
-    parts = [window(0, 0, W, h, "5", "0x7f", f"solved by {len(rows)}", meta_fill=P5 if rows else FAINT)]
-    parts.append(text(22, 46, f'<tspan fill="{INK}">$</tspan> <tspan fill="{FAINT}">cat</tspan> solvers', 12, DIM))
-    if not shown:
-        parts.append(text(22, 72, "nobody yet. nine steps, one board. it starts in the 0x7f block below.", 11, DIM))
-        parts.append(f'<rect class="blink" x="{22 + tw("nobody yet. nine steps, one board. it starts in the 0x7f block below.") + 4:.1f}" y="62" width="7" height="11" fill="{VIOLET}"/>')
-    for i, (handle, day) in enumerate(shown):
-        y = 72 + i * 20
-        parts.append(text(22, y, f"{i + 1:>2}", 11, VIOLET))
-        parts.append(text(52, y, escape(handle), 11, P5 if i == 0 else FG))
-        parts.append(text(W - 22, y, escape(day), 11, FAINT, "end"))
-    # dithered floor, the aurora's ground
-    parts.append(f'<rect x="1" y="{h - 9}" width="{W - 2}" height="8" fill="url(#shade)"/>')
-    css = ".blink{animation:blink 1.06s steps(1) infinite}@keyframes blink{50%{fill-opacity:0}}"
-    return svg(W, h, "".join(parts), css, f"0x7f puzzle: solved by {len(rows)}")
-
-
-# ── guestbook ───────────────────────────────────
-
-
-def guestbook(guests, login):
-    per_row, tile = 8, (W - 32) // 8
-    shown = guests[:32]
-    rows = max(1, -(-len(shown) // per_row))
-    h = 58 + rows * 96 + 28
-    parts = [window(0, 0, W, h, "6", "guestbook", f"{len(guests)} signed", meta_fill=P5 if guests else FAINT)]
-    parts.append(text(22, 46, f'<tspan fill="{INK}">$</tspan> <tspan fill="{FAINT}">ls</tspan> visitors/', 12, DIM))
-    if not shown:
-        parts.append(text(22, 100, "empty. open an issue titled sign and your dithered avatar lands here.", 11, DIM))
-    for i, g in enumerate(shown):
-        cx = 16 + (i % per_row) * tile + tile / 2
-        cy = 62 + (i // per_row) * 96
-        try:
-            uri = dither_avatar(g["avatar"], 32)
-        except Exception as err:  # noqa: BLE001
-            print(f"avatar {g['login']}: {err}")
-            uri = ""
-        parts.append(f'<rect x="{cx - 32.5}" y="{cy - .5}" width="65" height="65" fill="{BG}" stroke="{P5 if i == 0 else LINE}"/>')
-        if uri:
-            parts.append(f'<image x="{cx - 32}" y="{cy}" width="64" height="64" style="image-rendering:pixelated" href="{uri}"/>')
-        name = g["login"] if len(g["login"]) <= 13 else g["login"][:12] + "…"
-        parts.append(text(cx, cy + 80, escape(name), 11, FG, "middle"))
-        parts.append(text(cx, cy + 92, g["at"], 11, FAINT, "middle"))
-    parts.append(text(22, h - 14, f"sign: github.com/{login}/{login}/issues/new?title=sign", 11, FAINT))
-    parts.append(f'<rect x="1" y="{h - 7}" width="{W - 2}" height="6" fill="url(#shade)"/>')
-    return svg(W, h, "".join(parts), "", f"guestbook: {len(guests)} visitors signed")
-
-
 def main():
     login, out = sys.argv[1], Path(sys.argv[2])
     data = fetch(login, os.environ["GITHUB_TOKEN"])
@@ -722,8 +653,6 @@ def main():
     (out / "oss.svg").write_text(projects_head(len(PROJECTS), data["starred"]["totalCount"]))
     for project, (_, maturity, blurb) in zip(data["projects"], PROJECTS):
         (out / f"oss-{project['name']}.svg").write_text(project_row(project, maturity, blurb, max_stars, now))
-    (out / "board.svg").write_text(board(solvers()))
-    (out / "guestbook.svg").write_text(guestbook(data["guests"], login))
     for name, icon, label in BADGES:
         (out / f"badge-{name}.svg").write_text(badge(icon, label, hot=name == "hire"))
     for f in sorted(out.iterdir()):

@@ -1,20 +1,23 @@
 # An issue titled "sign" signs the guestbook (Actions compares strings
-# case-insensitively): label it, thank the visitor, close it, and re-render the
-# profile. Any other issue is left alone. Only the issue number and author
-# login reach the shell, both through env.
+# case-insensitively): label it, thank the visitor, close it, and sync the
+# signed list to 0x7f.pcstyle.dev, which redraws the window right away. Any
+# other issue is left alone. Only the issue number and author login reach the
+# shell, both through env.
 name: guestbook
 
 on:
   issues:
-    types: [opened]
+    types: [opened, labeled, unlabeled, deleted]
 
 permissions:
   issues: write
-  actions: write
+
+concurrency:
+  group: guestbook
 
 jobs:
   sign:
-    if: contains(fromJSON('["sign", "sign guestbook", "sign the guestbook"]'), github.event.issue.title)
+    if: github.event.action == 'opened' && contains(fromJSON('["sign", "sign guestbook", "sign the guestbook"]'), github.event.issue.title)
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
@@ -32,6 +35,23 @@ jobs:
             exit 0
           fi
           gh issue edit "$NUMBER" --add-label guestbook
-          gh issue comment "$NUMBER" --body "signed. your dithered avatar lands in the guestbook on github.com/${GH_REPO%%/*} in a minute or two."
+          gh issue comment "$NUMBER" --body "signed. your dithered avatar is in the guestbook on github.com/${GH_REPO%%/*} now."
           gh issue close "$NUMBER" --reason completed
-          gh workflow run profile.yml
+
+  sync:
+    needs: sign
+    # also runs when a guestbook label is added or removed by hand, or a signed issue is deleted
+    if: always() && (needs.sign.result == 'success' || (github.event.action != 'opened' && (github.event.label.name == 'guestbook' || github.event.action == 'deleted')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+      - run: python -m pip install --disable-pip-version-check pillow==12.3.0 numpy==2.5.3
+      - name: Sync signers to the live window
+        run: python scripts/guestbook_sync.py "${{ github.repository_owner }}"
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GUESTBOOK_SECRET: ${{ secrets.GUESTBOOK_SECRET }}
