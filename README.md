@@ -21,7 +21,15 @@
   <a href="https://github.com/pc-style/amp-plugins"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/oss-amp-plugins.svg" width="100%" alt="amp-plugins: inspectable Amp agent modes, tools, and context filters"/></a>
 </p>
 
-<img src="https://raw.githubusercontent.com/pc-style/pc-style/output/board.svg" width="100%" alt="0x7f: a five-step puzzle and the people who solved it."/>
+<details>
+<summary><code>guestbook</code> · sign it by opening an issue titled <code>sign</code></summary>
+<br/>
+
+<a href="https://github.com/pc-style/pc-style/issues/new?title=sign&body=hi%20from%20the%20void"><img src="https://raw.githubusercontent.com/pc-style/pc-style/output/guestbook.svg" width="100%" alt="guestbook: visitors who signed by opening an issue titled sign"/></a>
+
+</details>
+
+<img src="https://raw.githubusercontent.com/pc-style/pc-style/output/board.svg" width="100%" alt="0x7f: a nine-step puzzle and the people who solved it."/>
 
 <details>
 <summary><code>0x7f</code></summary>

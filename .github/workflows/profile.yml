@@ -1,4 +1,4 @@
-# Renders the profile SVGs (header, snake, stats, project windows) on GitHub's
+# Renders the profile SVGs (header, snake, stats, projects, guestbook) on GitHub's
 # runners and force-pushes them to the orphan `output` branch as
 # github-actions[bot]. Nothing lands on main and nothing is attributed to
 # pc-style, so it never shows up on the contribution graph.
@@ -28,8 +28,15 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Install Pillow and numpy
+        run: python -m pip install --disable-pip-version-check pillow==12.3.0 numpy==2.5.3
+
       - name: Render SVGs
-        run: python3 scripts/profile.py "${{ github.repository_owner }}" dist
+        run: python scripts/profile.py "${{ github.repository_owner }}" dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

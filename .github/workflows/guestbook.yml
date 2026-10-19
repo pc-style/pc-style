@@ -1,0 +1,36 @@
+# An issue titled "sign" signs the guestbook: label it, thank the visitor, close
+# it, and re-render the profile. Any other issue is left alone. Only the issue
+# number and author login reach the shell, both through env.
+name: guestbook
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  actions: write
+
+jobs:
+  sign:
+    if: contains(fromJSON('["sign", "sign guestbook", "sign the guestbook"]'), toLower(github.event.issue.title))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      NUMBER: ${{ github.event.issue.number }}
+      AUTHOR: ${{ github.event.issue.user.login }}
+    steps:
+      - name: Sign
+        run: |
+          signed=$(gh issue list --label guestbook --author "$AUTHOR" --state all --json number --jq length)
+          if [ "$signed" -gt 0 ]; then
+            gh issue comment "$NUMBER" --body "you've already signed, @$AUTHOR. one page each."
+            gh issue close "$NUMBER" --reason "not planned"
+            exit 0
+          fi
+          gh issue edit "$NUMBER" --add-label guestbook
+          gh issue comment "$NUMBER" --body "signed. your dithered avatar lands in the guestbook on github.com/${GH_REPO%%/*} in a minute or two."
+          gh issue close "$NUMBER" --reason completed
+          gh workflow run profile.yml

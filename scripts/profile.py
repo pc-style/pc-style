@@ -1,30 +1,50 @@
 """Render the profile README's SVGs in the pcstyle.dev desktop style.
 
 Usage: GITHUB_TOKEN=... python3 scripts/profile.py <user> <out_dir>
-Standard library only. Runs on GitHub Actions; the output goes to the
-`output` branch, never to main.
+Needs Pillow for the dithered avatars. Runs on GitHub Actions; the output
+goes to the `output` branch, never to main. THEME=night|ember|ice|mono
+overrides the time-of-day theme.
 """
 
 import base64
+import io
 import json
 import os
+import struct
 import sys
 import urllib.request
+import zlib
 from collections import deque
 from datetime import date, datetime, timezone
 from html import escape
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import numpy as np
+from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
 W = 896
 ADV = 0.6364  # Departure Mono advance, in em
 
-# homepage tokens (global.css, night theme) and the aurora palette built from them
+# homepage tokens (global.css); the accent set below is replaced by apply_theme()
 BG, GLASS, FG, DIM, FAINT, LINE = "#0a0a0b", "#0a0a0beb", "#e8e6e3", "#8a8782", "#4a4845", "#252327"
-ACCENT, VIOLET, INK, SHADE = "#8c1862", "#9d5cff", "#e45aa3", "#2a1a4d"
+ACCENT, VIOLET, INK, SHADE, BAR_ON = "#8c1862", "#9d5cff", "#e45aa3", "#2a1a4d", "#3a2470"
 P1, P2, P3, P4, P5 = "#271846", "#563390", "#8f54ea", "#d7559a", "#f6c5df"
 EMPTY = "#16131a"
 NEUTRAL, GREYBAR = "#1d1c21", "#5d5a63"
+PALETTE = []  # aurora palette, index 0 transparent
+
+# the homepage's ":theme" palettes: accent, accent-2, dither ink, tint, dim
+THEMES = {
+    "night": ("#8c1862", "#9d5cff", "#e45aa3", "#9d5cff", "#2a1a4d"),
+    "ember": ("#c8431f", "#ffa26b", "#ff7a45", "#c43d2f", "#3a1512"),
+    "ice": ("#2b5bd7", "#8fb8ff", "#cfe6ff", "#4f8dff", "#10204a"),
+    "mono": ("#9a9a9a", "#ffffff", "#e8e6e3", "#8a8a8a", "#2a2a2a"),
+}
+# Poznań hours: dawn is ice, midday mono, dusk ember, the rest night
+SCHEDULE = [(5, "ice"), (11, "mono"), (15, "ember"), (21, "night")]
+GUESTBOOK_LABEL = "guestbook"
 SOLVERS_API = "https://0x7f.pcstyle.dev/api/solvers"
 
 PROJECTS = [
@@ -53,6 +73,7 @@ CTL = {
 }
 
 GQL = """query($login: String!) { user(login: $login) {
+  avatarUrl(size: 256)
   followers { totalCount }
   contributionsCollection { contributionCalendar { totalContributions
     weeks { contributionDays { date weekday contributionLevel } } } }
@@ -62,6 +83,9 @@ GQL = """query($login: String!) { user(login: $login) {
     nodes { name pushedAt languages(first: 6, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } } } }
   public: repositories(privacy: PUBLIC, ownerAffiliations: OWNER) { totalCount }
 } }"""
+GUESTBOOK_GQL = """query($login: String!) { repository(owner: $login, name: $login) {
+  issues(labels: ["%s"], first: 100, states: [OPEN, CLOSED], orderBy: {field: CREATED_AT, direction: DESC}) {
+    nodes { createdAt author { login avatarUrl(size: 96) } } } } }""" % GUESTBOOK_LABEL
 REPO_GQL = """repository(owner: $login, name: "%s") { name stargazerCount forkCount pushedAt url primaryLanguage { name color } }"""
 LEVELS = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
 
@@ -86,6 +110,12 @@ def fetch(login, token):
     ) + "}"
     repos = gql(repos_q, login, token)
     data["projects"] = [repos[f"r{i}"] for i in range(len(PROJECTS))]
+    seen, data["guests"] = set(), []
+    for issue in gql(GUESTBOOK_GQL, login, token)["repository"]["issues"]["nodes"]:
+        author = issue["author"]
+        if author and author["login"].lower() not in seen:
+            seen.add(author["login"].lower())
+            data["guests"].append({"login": author["login"], "avatar": author["avatarUrl"], "at": issue["createdAt"][:10]})
     return data
 
 
@@ -126,7 +156,7 @@ def defs():
 
     return "<defs>" + "".join([
         checker("bar", NEUTRAL),
-        checker("bar-on", "#3a2470"),
+        checker("bar-on", BAR_ON),
         checker("l1", P2, EMPTY),
         checker("l3", P3, P2),
         checker("hi", P5, P4),
@@ -151,6 +181,74 @@ def text(x, y, s, size=11, fill=FG, anchor="start", extra=""):
 
 def tw(s, size=11):
     return len(s) * size * ADV
+
+
+def rgb(h):
+    return tuple(int(h[i:i + 2], 16) for i in (1, 3, 5))
+
+
+def hexc(c):
+    return "#" + "".join(f"{round(v):02x}" for v in c)
+
+
+def mix(a, b, t):
+    return tuple(x + (y - x) * t for x, y in zip(a, b))
+
+
+def theme_for(now):
+    hour = now.astimezone(ZoneInfo("Europe/Warsaw")).hour
+    name = "night"
+    for start, theme in SCHEDULE:
+        if hour >= start:
+            name = theme
+    return name
+
+
+def apply_theme(name):
+    """Point the accent globals at one homepage theme, with the same palette maths as Dither.astro."""
+    global ACCENT, VIOLET, INK, SHADE, BAR_ON, P1, P2, P3, P4, P5, EMPTY, PALETTE
+    accent, accent2, ink, tint, dim = (rgb(c) for c in THEMES[name])
+    paper, white = rgb(BG), (255, 255, 255)
+    PALETTE = [paper, mix(dim, paper, .1), mix(dim, tint, .38), mix(tint, dim, .12), mix(ink, paper, .06), mix(ink, white, .65)]
+    P1, P2, P3, P4, P5 = (hexc(c) for c in PALETTE[1:])
+    ACCENT, VIOLET, INK, SHADE = hexc(accent), hexc(accent2), hexc(ink), hexc(dim)
+    BAR_ON, EMPTY = hexc(mix(dim, tint, .14)), hexc(mix(paper, dim, .3))
+
+
+def repaint_png(data, palette):
+    """Swap the first len(palette) PLTE entries of an indexed PNG; everything else, stego included, stays."""
+    out, pos = [data[:8]], 8
+    while pos < len(data):
+        n, kind = struct.unpack(">I4s", data[pos:pos + 8])
+        body = data[pos + 8:pos + 8 + n]
+        if kind == b"PLTE":
+            body = bytes(round(v) for c in palette for v in c) + body[len(palette) * 3:]
+        out.append(struct.pack(">I4s", len(body), kind) + body + struct.pack(">I", zlib.crc32(kind + body)))
+        pos += 12 + n
+    return b"".join(out)
+
+
+B8 = [0, 32, 8, 40, 2, 34, 10, 42, 48, 16, 56, 24, 50, 18, 58, 26, 12, 44, 4, 36, 14, 46, 6, 38, 60, 28, 52, 20, 62, 30, 54, 22,
+      3, 35, 11, 43, 1, 33, 9, 41, 51, 19, 59, 27, 49, 17, 57, 25, 15, 47, 7, 39, 13, 45, 5, 37, 63, 31, 55, 23, 61, 29, 53, 21]
+
+
+def dither_avatar(url, cells):
+    """An avatar through the aurora's Bayer 8x8 into the theme palette, as a data URI; dark pixels stay transparent."""
+    req = urllib.request.Request(url, headers={"User-Agent": "pc-style-profile"})
+    with urllib.request.urlopen(req, timeout=20) as res:
+        img = Image.open(io.BytesIO(res.read())).convert("L")
+    img = ImageOps.autocontrast(img, cutoff=2).resize((cells, cells), Image.LANCZOS)
+    v = np.asarray(img, dtype=float) / 255 * 5
+    th = (np.array(B8, dtype=float).reshape(8, 8) + .5) / 64
+    lv = np.floor(v).astype(int)
+    lv += (v - lv) > np.tile(th, (cells // 8 + 1, cells // 8 + 1))[:cells, :cells]
+    lv = np.clip(lv, 0, 5)
+    lv[np.asarray(img) < 28] = 0
+    out = Image.fromarray(lv.astype(np.uint8), mode="P")
+    out.putpalette([round(c) for p in PALETTE for c in p])
+    buf = io.BytesIO()
+    out.save(buf, format="PNG", transparency=0, optimize=True)
+    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
 
 
 def window(x, y, w, h, key, title, meta="", focus=False, meta_fill=FAINT):
@@ -214,10 +312,10 @@ def ago(iso, now):
 # ── header ──────────────────────────────────────
 
 
-def header():
+def header(theme, avatar_url):
     H = 380
     frames, frame_h = 24, 190
-    sprite = base64.b64encode((ROOT / "assets/aurora.png").read_bytes()).decode()
+    sprite = base64.b64encode(repaint_png((ROOT / "assets/aurora.png").read_bytes(), PALETTE)).decode()
     css = (
         f".sky{{animation:sky 4.2s steps({frames},jump-none) infinite alternate}}"
         f"@keyframes sky{{to{{transform:translateY(-{(frames - 1) * H}px)}}}}"
@@ -234,10 +332,10 @@ def header():
         f'<rect width="{W}" height="22" fill="{BG}" fill-opacity=".85"/>',
         f'<line x1="0" y1="22.5" x2="{W}" y2="22.5" stroke="{LINE}"/>',
         text(10, 15, '<tspan fill="#8a8782">~/</tspan>pcstyle', 11, FG),
-        text(W - 10, 15, "pcstyle.dev", 11, DIM, "end"),
+        text(W - 10, 15, f'<tspan fill="{FAINT}">theme</tspan> {theme} <tspan fill="{FAINT}">·</tspan> pcstyle.dev', 11, DIM, "end"),
     ]
     # the "me" window
-    x, y, w, h = (W - 600) // 2, 92, 600, 236
+    x, y, w, h = (W - 680) // 2, 92, 680, 236
     parts.append(window(x, y, w, h, "1", "me", "~/pcstyle", focus=True))
     bx = x + 22
     parts.append(text(bx, y + 66, "Adam Krupa", 33, FG))
@@ -258,6 +356,15 @@ def header():
         frag, t = typed(bx + tw("$ day job  ", 12), ry, escape(v), 12, t, 0.028, FG if i else P5, f"t{i}", cursor=i == len(rows) - 1)
         parts.append(frag)
         t += 0.15
+    # dithered portrait on the right, developing top to bottom like a slow scan
+    px, py, size = x + w - 22 - 128, y + 44, 128
+    parts.append(f'<rect x="{px - .5}" y="{py - .5}" width="{size + 1}" height="{size + 1}" fill="{BG}" stroke="{LINE}"/>')
+    parts.append(
+        f'<clipPath id="scan"><rect x="{px}" y="{py}" width="{size}" height="0">'
+        f'<animate attributeName="height" values="{";".join(str(i * 4) for i in range(33))}" calcMode="discrete" begin="0.3s" dur="1.6s" fill="freeze"/>'
+        f"</rect></clipPath>"
+        f'<image clip-path="url(#scan)" x="{px}" y="{py}" width="{size}" height="{size}" style="image-rendering:pixelated" href="{dither_avatar(avatar_url, 64)}"/>'
+    )
     # resize grip: a stair of 2px dots
     for i in range(3):
         for j in range(i + 1):
@@ -568,12 +675,46 @@ def board(rows):
     return svg(W, h, "".join(parts), css, f"0x7f puzzle: solved by {len(rows)}")
 
 
+# ── guestbook ───────────────────────────────────
+
+
+def guestbook(guests, login):
+    per_row, tile = 8, (W - 32) // 8
+    shown = guests[:32]
+    rows = max(1, -(-len(shown) // per_row))
+    h = 58 + rows * 96 + 28
+    parts = [window(0, 0, W, h, "6", "guestbook", f"{len(guests)} signed", meta_fill=P5 if guests else FAINT)]
+    parts.append(text(22, 46, f'<tspan fill="{INK}">$</tspan> <tspan fill="{FAINT}">ls</tspan> visitors/', 12, DIM))
+    if not shown:
+        parts.append(text(22, 100, "empty. open an issue titled sign and your dithered avatar lands here.", 11, DIM))
+    for i, g in enumerate(shown):
+        cx = 16 + (i % per_row) * tile + tile / 2
+        cy = 62 + (i // per_row) * 96
+        try:
+            uri = dither_avatar(g["avatar"], 32)
+        except Exception as err:  # noqa: BLE001
+            print(f"avatar {g['login']}: {err}")
+            uri = ""
+        parts.append(f'<rect x="{cx - 32.5}" y="{cy - .5}" width="65" height="65" fill="{BG}" stroke="{P5 if i == 0 else LINE}"/>')
+        if uri:
+            parts.append(f'<image x="{cx - 32}" y="{cy}" width="64" height="64" style="image-rendering:pixelated" href="{uri}"/>')
+        name = g["login"] if len(g["login"]) <= 13 else g["login"][:12] + "…"
+        parts.append(text(cx, cy + 80, escape(name), 11, FG, "middle"))
+        parts.append(text(cx, cy + 92, g["at"], 11, FAINT, "middle"))
+    parts.append(text(22, h - 14, f"sign: github.com/{login}/{login}/issues/new?title=sign", 11, FAINT))
+    parts.append(f'<rect x="1" y="{h - 7}" width="{W - 2}" height="6" fill="url(#shade)"/>')
+    return svg(W, h, "".join(parts), "", f"guestbook: {len(guests)} visitors signed")
+
+
 def main():
     login, out = sys.argv[1], Path(sys.argv[2])
     data = fetch(login, os.environ["GITHUB_TOKEN"])
     now = datetime.now(timezone.utc)
+    theme = os.environ.get("THEME") or theme_for(now)
+    apply_theme(theme)
+    print(f"theme {theme}")
     out.mkdir(parents=True, exist_ok=True)
-    (out / "header.svg").write_text(header())
+    (out / "header.svg").write_text(header(theme, data["avatarUrl"]))
     snake_svg, total = snake(data)
     (out / "snake.svg").write_text(snake_svg)
     (out / "stats.svg").write_text(stats(data, total, now, login))
@@ -582,6 +723,7 @@ def main():
     for project, (_, maturity, blurb) in zip(data["projects"], PROJECTS):
         (out / f"oss-{project['name']}.svg").write_text(project_row(project, maturity, blurb, max_stars, now))
     (out / "board.svg").write_text(board(solvers()))
+    (out / "guestbook.svg").write_text(guestbook(data["guests"], login))
     for name, icon, label in BADGES:
         (out / f"badge-{name}.svg").write_text(badge(icon, label, hot=name == "hire"))
     for f in sorted(out.iterdir()):
