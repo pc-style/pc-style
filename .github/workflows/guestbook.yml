@@ -1,4 +1,4 @@
-# An issue titled "sign" signs the guestbook: label it, thank the visitor, close
+# An issue titled "sign" (any case; Actions compares strings case-insensitively) signs the guestbook: label it, thank the visitor, close
 # it, and re-render the profile. Any other issue is left alone. Only the issue
 # number and author login reach the shell, both through env.
 name: guestbook
@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   sign:
-    if: contains(fromJSON('["sign", "sign guestbook", "sign the guestbook"]'), toLower(github.event.issue.title))
+    if: contains(fromJSON('["sign", "sign guestbook", "sign the guestbook"]'), github.event.issue.title)
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
